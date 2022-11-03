@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  dllmain.cpp
+  ExtIO_EBAZ.cpp
+D:\EBAZ4205_SDR\ExtIO_EBAZ\ExtIO_EBAZ\ExtIO_EBAZ.cpp(151,74): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+     Creating library D:\EBAZ4205_SDR\ExtIO_EBAZ\Release\ExtIO_EBAZ.lib and object D:\EBAZ4205_SDR\ExtIO_EBAZ\Release\ExtIO_EBAZ.exp
+  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+  ExtIO_EBAZ.vcxproj -> D:\EBAZ4205_SDR\ExtIO_EBAZ\Release\ExtIO_EBAZ.dll

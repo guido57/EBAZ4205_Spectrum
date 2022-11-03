@@ -1,0 +1,8 @@
+C:\Users\guido\source\repos\ExtIO_EBAZ\ExtIO_EBAZ\Debug\ExtIOEBAZ.GUI.resources
+C:\Users\guido\source\repos\ExtIO_EBAZ\ExtIO_EBAZ\Debug\ExtIO_EBAZ.vcxproj.GenerateResource.cache
+D:\EBAZ4205_SDR\extio\ExtIO_EBAZ\ExtIO_EBAZ\Debug\ExtIO_EBAZ.vcxproj.AssemblyReference.cache
+D:\EBAZ4205_SDR\extio\ExtIO_EBAZ\ExtIO_EBAZ\Debug\ExtIOEBAZ.GUI.resources
+D:\EBAZ4205_SDR\extio\ExtIO_EBAZ\ExtIO_EBAZ\Debug\ExtIO_EBAZ.vcxproj.GenerateResource.cache
+D:\EBAZ4205_SDR\ExtIO_EBAZ\ExtIO_EBAZ\Debug\ExtIOEBAZ.GUI.resources
+D:\EBAZ4205_SDR\ExtIO_EBAZ\ExtIO_EBAZ\Debug\ExtIO_EBAZ.vcxproj.GenerateResource.cache
+D:\EBAZ4205_SDR\ExtIO_EBAZ\ExtIO_EBAZ\Debug\ExtIO_EBAZ.vcxproj.AssemblyReference.cache

@@ -1,0 +1,2 @@
+D:\EBAZ4205_SDR\extio\ExtIO_EBAZ4205\Debug\ExtIO_RedPitaya.GUI.resources
+D:\EBAZ4205_SDR\extio\ExtIO_EBAZ4205\Debug\ExtIO_EBAZ4205.vcxproj.GenerateResource.cache

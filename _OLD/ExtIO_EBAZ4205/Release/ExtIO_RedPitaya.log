@@ -1,0 +1,8 @@
+﻿  ExtIO_RedPitaya.cpp
+D:\ExtIO_RedPitaya\ExtIO_RedPitaya.cpp(123,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ExtIO_RedPitaya\ExtIO_RedPitaya.cpp(124,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ExtIO_RedPitaya\ExtIO_RedPitaya.cpp(146,76): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\ExtIO_RedPitaya\ExtIO_RedPitaya.cpp(191,26): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+LINK : fatal error LNK1295: '/OPT:NOREF' not compatible with '/LTCG:incremental' specification; link without '/LTCG:incremental'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(1074,5): error MSB6006: "link.exe" exited with code 1295.

@@ -1,0 +1,13 @@
+﻿  pch.cpp
+  extio-dll.cpp
+D:\EBAZ4205_SDR\extio\extio-dll\extio-dll.cpp(311,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+resource.rc(30): warning RC2182: duplicate dialog control ID 0
+  
+resource.rc(31): warning RC2182: duplicate dialog control ID 0
+  
+resource.rc(32): warning RC2182: duplicate dialog control ID 0
+  
+resource.rc(33): warning RC2182: duplicate dialog control ID 0
+  
+     Creating library D:\EBAZ4205_SDR\extio\Debug\extio-dll.lib and object D:\EBAZ4205_SDR\extio\Debug\extio-dll.exp
+  extio-dll.vcxproj -> D:\EBAZ4205_SDR\extio\Debug\extio-dll.dll

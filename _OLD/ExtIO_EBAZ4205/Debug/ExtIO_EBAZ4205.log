@@ -1,0 +1,8 @@
+﻿  ExtIO_EBAZ4205.cpp
+D:\EBAZ4205_SDR\extio\ExtIO_EBAZ4205\ExtIO_EBAZ4205.cpp(148,76): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\EBAZ4205_SDR\extio\ExtIO_EBAZ4205\ExtIO_EBAZ4205.cpp(125,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\EBAZ4205_SDR\extio\ExtIO_EBAZ4205\ExtIO_EBAZ4205.cpp(126,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\EBAZ4205_SDR\extio\ExtIO_EBAZ4205\ExtIO_EBAZ4205.cpp(193,26): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+     Creating library ExtIO_EBAZ4205.lib and object ExtIO_EBAZ4205.exp
+  ExtIO_EBAZ4205.vcxproj -> D:\EBAZ4205_SDR\extio\Debug\ExtIO_EBAZ4205.dll

@@ -1,0 +1,2 @@
+﻿  test-extio.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(173,1): fatal error C1189: #error:  "No Target Architecture"

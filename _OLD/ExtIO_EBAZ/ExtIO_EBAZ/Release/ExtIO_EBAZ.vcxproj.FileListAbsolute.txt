@@ -1,0 +1,2 @@
+D:\EBAZ4205_SDR\ExtIO_EBAZ\ExtIO_EBAZ\Release\ExtIOEBAZ.GUI.resources
+D:\EBAZ4205_SDR\ExtIO_EBAZ\ExtIO_EBAZ\Release\ExtIO_EBAZ.vcxproj.GenerateResource.cache

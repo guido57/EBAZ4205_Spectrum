@@ -1,0 +1,6 @@
+﻿test-extio.obj : error LNK2019: unresolved external symbol InitHW referenced in function main
+test-extio.obj : error LNK2019: unresolved external symbol __imp_OpenHW referenced in function main
+test-extio.obj : error LNK2019: unresolved external symbol __imp_StartHW referenced in function main
+test-extio.obj : error LNK2019: unresolved external symbol __imp_SetCallback referenced in function main
+..\ExtIO_EBAZ4205\ExtIO_EBAZ4205.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+D:\EBAZ4205_SDR\extio\x64\Debug\test-extio.exe : fatal error LNK1120: 4 unresolved externals

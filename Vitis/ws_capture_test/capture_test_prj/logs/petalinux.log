@@ -1,0 +1,32 @@
+TRACE::2022-10-06.19:35:47::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/qemu/
+TRACE::2022-10-06.19:35:47::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/linux_domain/qemu/
+TRACE::2022-10-06.19:35:47::SCWLinux:: Copying the user libraries. 
+TRACE::2022-10-06.19:35:47::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-10-06.20:02:59::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/qemu/
+TRACE::2022-10-06.20:02:59::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/linux_domain/qemu/
+TRACE::2022-10-06.20:02:59::SCWLinux:: Copying the user libraries. 
+TRACE::2022-10-06.20:02:59::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-10-08.20:00:45::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/qemu/
+TRACE::2022-10-08.20:00:45::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/linux_domain/qemu/
+TRACE::2022-10-08.20:00:45::SCWLinux:: Copying the user libraries. 
+TRACE::2022-10-08.20:00:45::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-10-11.21:42:04::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/qemu/
+TRACE::2022-10-11.21:42:04::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/linux_domain/qemu/
+TRACE::2022-10-11.21:42:04::SCWLinux:: Copying the user libraries. 
+TRACE::2022-10-11.21:42:04::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-11-01.21:59:47::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/qemu/
+TRACE::2022-11-01.21:59:47::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/linux_domain/qemu/
+TRACE::2022-11-01.21:59:47::SCWLinux:: Copying the user libraries. 
+TRACE::2022-11-01.21:59:47::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-11-03.17:51:03::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/qemu/
+TRACE::2022-11-03.17:51:03::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/linux_domain/qemu/
+TRACE::2022-11-03.17:51:03::SCWLinux:: Copying the user libraries. 
+TRACE::2022-11-03.17:51:03::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-11-03.17:53:52::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/qemu/
+TRACE::2022-11-03.17:53:52::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/linux_domain/qemu/
+TRACE::2022-11-03.17:53:52::SCWLinux:: Copying the user libraries. 
+TRACE::2022-11-03.17:53:52::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-11-03.18:53:18::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/qemu/
+TRACE::2022-11-03.18:53:18::SCWLinux::Copying the qemu file from  d:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/sw/capture_test_prj/linux_domain/qemu/
+TRACE::2022-11-03.18:53:18::SCWLinux:: Copying the user libraries. 
+TRACE::2022-11-03.18:53:18::SCWLinux::Skipping the Petalinux build as image is already given.
