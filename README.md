@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the Vivado project, the Vitis project and a Python app to display the 0-32 MHz radio spectrum.
+This repository contains the Vivado project, the Vitis project and a Python app to display the 0-32 MHz radio spectrum in a full view.
 
 ## Getting Started for FPGA or EBAZ4205 beginners
 
@@ -10,7 +10,7 @@ Before going straight to this project, I strongly reccomend to carefully prepare
 * [HW is in my Cheap (35$) and powerful FPGA Programming Hackaday project](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
 * [SW is in my EBAZ4205 repository](https://github.com/guido57/EBAZ4205)
 
-There's nothing esoteric in it, but this project is quite complex because it requires: 
+In this project there's nothing esoteric, but it is quite complex because it requires: 
 * Hardware assembling (you can use a solder iron on SMD, don't you?) 
 * FPGA Zynq7010 design and programming with Xilinx Vivado 
 * flashing Linux on the Zynq7010 FPGA with Xilinx Petalinux
@@ -24,11 +24,11 @@ There's nothing esoteric in it, but this project is quite complex because it req
 
 ## Software
 
-The following chapters describe the three main SW projects (folders of this repository)
+The following chapters describe the three main SW sub-projects (folders of this repository)
 
-* Zynq
-* Vitis
-* SpectrumPy
+* Zynq: the Xilinx Vivado project to program the Zynq7010 PL (Programmable Logic)
+* Vitis: the Xilinx Vitis project to build the TCP_server Linux app running on the Zynq7010 PS (Processing System)
+* SpectrumPy: the Python software for Windows to display the spectrum
 
 The Petalinux project is not in this Repository because is the same of [my EBAZ4205 repository](https://github.com/guido57/EBAZ4205)
 
@@ -36,12 +36,24 @@ The Petalinux project is not in this Repository because is the same of [my EBAZ4
 ## Zynq
 
 This is the Xilinx Vivado 2021.2 project that let's you to program the Zynq7010 FPGA (PL side) contained in the EBAZ4205 board. 
-After programming it, the EBAZ4205 will receive the 12 bits samples from the AD9226 
+
+After programming it, the EBAZ4205 will:
+
+* supply a 64 MHz clock to the AD9226 board
+* receive the 12 bits samples from the AD9226
+* receive commands from the Linux TCP_server program to:
+  * capture a frame of samples (16384 samples at a time)
+  * switch between the ADC input and a local RF test generator  
+  * change the local RF test generator frequency in the range 100 KHz - 30 MHz
 
 ## Vitis
 
+This is the Xilinx Vitis 2021.2 project that let's you to build a C++ app running on the Zynq7010 PS to:
+* create a TCP server to send data/receive command to/from the SpectrumPy app
+* "send commands"/"receive data" to/from the Zynq7010 PL
 
 ## SpectrumPy
+
 
 
 ## License
