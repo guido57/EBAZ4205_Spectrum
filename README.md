@@ -32,6 +32,7 @@ The following chapters describe the three main SW sub-projects (folders of this 
 
 The Petalinux project is not in this Repository because is the same of [my EBAZ4205 repository](https://github.com/guido57/EBAZ4205)
 
+https://github.com/guido57/EBAZ4205_SDR/blob/main/docs/slide.png
 
 ## Zynq
 
