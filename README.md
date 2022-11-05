@@ -29,6 +29,7 @@ The following chapters describe the three main SW sub-projects (folders of this 
 * Zynq: the Xilinx Vivado project to program the Zynq7010 PL (Programmable Logic)
 * Vitis: the Xilinx Vitis project to build the TCP_server Linux app running on the Zynq7010 PS (Processing System)
 * SpectrumPy: the Python software for Windows to display the spectrum
+* Change the FFT windowing method: Hanning, Hamming, Bartlett, Blackman ...
 
 The Petalinux project is not in this Repository because is the same of [my EBAZ4205 repository](https://github.com/guido57/EBAZ4205)
 
