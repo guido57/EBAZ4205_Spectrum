@@ -56,7 +56,7 @@ This is the Xilinx Vitis 2021.2 project that let's you to build a C++ app runnin
 
 ## SpectrumPy
 
-This is the Python software receiving sampled data from EBAZ4205 and displaying their spectrum and waterfal in its User Interface.
+This is the Python software receiving sampled data from EBAZ4205 and displaying spectrum and waterfall in its User Interface.
 It lets you to send commands to EBA4205 also to:
   * switch between the ADC input and a local RF test generator  
   * change the local RF test generator frequency in the range 100 KHz - 30 MHz
