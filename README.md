@@ -60,6 +60,8 @@ It lets you to send commands to EBA4205 also to:
   * switch between the ADC input and a local RF test generator  
   * change the local RF test generator frequency in the range 100 KHz - 30 MHz
   * change the waterfall colors
+  
+  ![](https://github.com/guido57/EBAZ4205_SDR/blob/main/docs/SpectrumPy.png)
 
 
 ## License
