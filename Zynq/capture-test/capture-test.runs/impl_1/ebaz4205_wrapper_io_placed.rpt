@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date                      : Wed Nov  2 21:35:20 2022
+| Date                      : Sat Nov  5 19:54:48 2022
 | Host                      : DESKTOP-SQGSJV7 running 64-bit major release  (build 9200)
 | Command                   : report_io -file ebaz4205_wrapper_io_placed.rpt
 | Design                    : ebaz4205_wrapper
@@ -394,7 +394,7 @@ Table of Contents
 | V17        | enet0_gmii_rxd[2]         | High Range | IO_L21P_T3_DQS_34       | INPUT         | LVCMOS33          |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | V18        | enet0_gmii_txd[2]         | High Range | IO_L21N_T3_DQS_34       | OUTPUT        | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | V19        |                           |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
-| V20        | ADC_in[12]                | High Range | IO_L16P_T2_34           | INPUT         | LVCMOS33          |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| V20        | OTR                       | High Range | IO_L16P_T2_34           | INPUT         | LVCMOS33          |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | W1         | DDR_dq[26]                |            | PS_DDR_DQ26_502         | INOUT         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      | PULLUP    |          |      | SPLIT            |              |                   |              |
 | W2         |                           |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | W3         | DDR_dq[29]                |            | PS_DDR_DQ29_502         | INOUT         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      | PULLUP    |          |      | SPLIT            |              |                   |              |

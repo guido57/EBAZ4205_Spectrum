@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov  2 21:32:21 2022" VIVADOVERSION="2021.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Nov  4 22:11:18 2022" VIVADOVERSION="2021.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="ebaz4205" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -43,11 +43,6 @@
     <PORT CLKFREQUENCY="25000000" DIR="O" NAME="FCLK_CLK3_0" SIGIS="clk" SIGNAME="PS_processing_system7_0_FCLK_CLK3">
       <CONNECTIONS>
         <CONNECTION INSTANCE="PS_processing_system7_0" PORT="FCLK_CLK3"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="12" NAME="ADC_in" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_ADC_in">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="xlconcat_2" PORT="In1"/>
       </CONNECTIONS>
     </PORT>
     <PORT CLKFREQUENCY="64000000" DIR="O" NAME="ADC_clk_64M" SIGIS="clk" SIGNAME="PS_processing_system7_0_FCLK_CLK1">
@@ -178,6 +173,16 @@
     <PORT DIR="I" NAME="MDIO_ETHERNET_0_0_mdio_i" SIGIS="undef" SIGNAME="PS_processing_system7_0_ENET0_MDIO_I">
       <CONNECTIONS>
         <CONNECTION INSTANCE="PS_processing_system7_0" PORT="ENET0_MDIO_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="OTR" SIGIS="data" SIGNAME="External_Ports_OTR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_2" PORT="In0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="ADC_in" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_ADC_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_2" PORT="In2"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -3124,22 +3129,22 @@
         <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
         <PARAMETER NAME="C_MODE_OF_OPERATION" VALUE="0"/>
         <PARAMETER NAME="C_MODULUS" VALUE="9"/>
-        <PARAMETER NAME="C_ACCUMULATOR_WIDTH" VALUE="27"/>
+        <PARAMETER NAME="C_ACCUMULATOR_WIDTH" VALUE="26"/>
         <PARAMETER NAME="C_CHANNELS" VALUE="1"/>
         <PARAMETER NAME="C_HAS_PHASE_OUT" VALUE="0"/>
         <PARAMETER NAME="C_HAS_PHASEGEN" VALUE="1"/>
         <PARAMETER NAME="C_HAS_SINCOS" VALUE="1"/>
-        <PARAMETER NAME="C_LATENCY" VALUE="8"/>
+        <PARAMETER NAME="C_LATENCY" VALUE="6"/>
         <PARAMETER NAME="C_MEM_TYPE" VALUE="1"/>
         <PARAMETER NAME="C_NEGATIVE_COSINE" VALUE="0"/>
         <PARAMETER NAME="C_NEGATIVE_SINE" VALUE="0"/>
         <PARAMETER NAME="C_NOISE_SHAPING" VALUE="1"/>
         <PARAMETER NAME="C_OUTPUTS_REQUIRED" VALUE="0"/>
-        <PARAMETER NAME="C_OUTPUT_FORM" VALUE="0"/>
+        <PARAMETER NAME="C_OUTPUT_FORM" VALUE="1"/>
         <PARAMETER NAME="C_OUTPUT_WIDTH" VALUE="16"/>
         <PARAMETER NAME="C_PHASE_ANGLE_WIDTH" VALUE="14"/>
         <PARAMETER NAME="C_PHASE_INCREMENT" VALUE="1"/>
-        <PARAMETER NAME="C_PHASE_INCREMENT_VALUE" VALUE="101000111101011100001,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <PARAMETER NAME="C_PHASE_INCREMENT_VALUE" VALUE="100000000000000000000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
         <PARAMETER NAME="C_RESYNC" VALUE="0"/>
         <PARAMETER NAME="C_PHASE_OFFSET" VALUE="0"/>
         <PARAMETER NAME="C_PHASE_OFFSET_VALUE" VALUE="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
@@ -3170,7 +3175,7 @@
         <PARAMETER NAME="C_CHAN_WIDTH" VALUE="1"/>
         <PARAMETER NAME="Component_Name" VALUE="ebaz4205_dds_compiler_0_0"/>
         <PARAMETER NAME="PartsPresent" VALUE="Phase_Generator_and_SIN_COS_LUT"/>
-        <PARAMETER NAME="DDS_Clock_Rate" VALUE="100"/>
+        <PARAMETER NAME="DDS_Clock_Rate" VALUE="64"/>
         <PARAMETER NAME="Channels" VALUE="1"/>
         <PARAMETER NAME="Mode_of_Operation" VALUE="Standard"/>
         <PARAMETER NAME="Modulus" VALUE="9"/>
@@ -3178,7 +3183,7 @@
         <PARAMETER NAME="Spurious_Free_Dynamic_Range" VALUE="95"/>
         <PARAMETER NAME="Frequency_Resolution" VALUE="1"/>
         <PARAMETER NAME="Noise_Shaping" VALUE="Auto"/>
-        <PARAMETER NAME="Phase_Width" VALUE="27"/>
+        <PARAMETER NAME="Phase_Width" VALUE="26"/>
         <PARAMETER NAME="Output_Width" VALUE="16"/>
         <PARAMETER NAME="Phase_Increment" VALUE="Programmable"/>
         <PARAMETER NAME="Resync" VALUE="false"/>
@@ -3198,13 +3203,13 @@
         <PARAMETER NAME="M_DATA_Has_TUSER" VALUE="Not_Required"/>
         <PARAMETER NAME="M_PHASE_Has_TUSER" VALUE="Not_Required"/>
         <PARAMETER NAME="S_CONFIG_Sync_Mode" VALUE="On_Vector"/>
-        <PARAMETER NAME="OUTPUT_FORM" VALUE="Twos_Complement"/>
+        <PARAMETER NAME="OUTPUT_FORM" VALUE="Sign_and_Magnitude"/>
         <PARAMETER NAME="Latency_Configuration" VALUE="Auto"/>
-        <PARAMETER NAME="Latency" VALUE="8"/>
+        <PARAMETER NAME="Latency" VALUE="6"/>
         <PARAMETER NAME="Has_ARESETn" VALUE="false"/>
         <PARAMETER NAME="Has_ACLKEN" VALUE="false"/>
         <PARAMETER NAME="Output_Frequency1" VALUE="1"/>
-        <PARAMETER NAME="PINC1" VALUE="101000111101011100001"/>
+        <PARAMETER NAME="PINC1" VALUE="100000000000000000000"/>
         <PARAMETER NAME="Phase_Offset_Angles1" VALUE="0"/>
         <PARAMETER NAME="POFF1" VALUE="0"/>
         <PARAMETER NAME="Output_Frequency2" VALUE="0"/>
@@ -3878,7 +3883,7 @@
         <PARAMETER NAME="C_ALL_OUTPUTS" VALUE="1"/>
         <PARAMETER NAME="C_ALL_OUTPUTS_2" VALUE="1"/>
         <PARAMETER NAME="C_INTERRUPT_PRESENT" VALUE="0"/>
-        <PARAMETER NAME="C_DOUT_DEFAULT" VALUE="0x00147AE1"/>
+        <PARAMETER NAME="C_DOUT_DEFAULT" VALUE="0x00100000"/>
         <PARAMETER NAME="C_TRI_DEFAULT" VALUE="0xFFFFFFFF"/>
         <PARAMETER NAME="C_IS_DUAL" VALUE="1"/>
         <PARAMETER NAME="C_DOUT_DEFAULT_2" VALUE="0x00000000"/>
@@ -4732,9 +4737,9 @@
     <MODULE COREREVISION="4" FULLNAME="/xlconcat_2" HWVERSION="2.1" INSTANCE="xlconcat_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="IN0_WIDTH" VALUE="3"/>
-        <PARAMETER NAME="IN1_WIDTH" VALUE="13"/>
-        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="3"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="12"/>
         <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
         <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
         <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
@@ -4861,17 +4866,22 @@
         <PARAMETER NAME="IN126_WIDTH" VALUE="1"/>
         <PARAMETER NAME="IN127_WIDTH" VALUE="1"/>
         <PARAMETER NAME="dout_width" VALUE="16"/>
-        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="3"/>
         <PARAMETER NAME="Component_Name" VALUE="ebaz4205_xlconcat_2_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="2" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
+        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_OTR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OTR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlconstant_2" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="12" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ADC_in">
+        <PORT DIR="I" LEFT="11" NAME="In2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ADC_in">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="ADC_in"/>
           </CONNECTIONS>
@@ -4930,7 +4940,7 @@
       <PORTS>
         <PORT DIR="O" LEFT="2" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_2" PORT="In0"/>
+            <CONNECTION INSTANCE="xlconcat_2" PORT="In1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

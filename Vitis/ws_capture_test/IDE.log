@@ -125,3 +125,21 @@
 18:53:08 INFO  : Result from executing command 'removePlatformRepo': 
 18:53:18 INFO  : Result from executing command 'getProjects': capture_test_prj
 18:53:18 INFO  : Result from executing command 'getPlatforms': 
+16:33:11 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\EBAZ4205_SDR\Vitis\ws_capture_test\temp_xsdb_launch_script.tcl
+16:33:14 INFO  : XSCT server has started successfully.
+16:33:14 INFO  : Successfully done setting XSCT server connection channel  
+16:33:14 INFO  : plnx-install-location is set to ''
+16:33:14 INFO  : Successfully done setting workspace for the tool. 
+16:33:14 INFO  : Platform repository initialization has completed.
+16:33:15 INFO  : Registering command handlers for Vitis TCF services
+16:33:17 INFO  : Successfully done query RDI_DATADIR 
+20:22:04 INFO  : Result from executing command 'getProjects': capture_test_prj
+20:22:04 INFO  : Result from executing command 'getPlatforms': capture_test_prj|D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/capture_test_prj.xpfm
+20:55:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\EBAZ4205_SDR\Vitis\ws_capture_test\temp_xsdb_launch_script.tcl
+20:55:04 INFO  : Platform repository initialization has completed.
+20:55:04 INFO  : XSCT server has started successfully.
+20:55:04 INFO  : Registering command handlers for Vitis TCF services
+20:55:07 INFO  : plnx-install-location is set to ''
+20:55:07 INFO  : Successfully done setting XSCT server connection channel  
+20:55:07 INFO  : Successfully done query RDI_DATADIR 
+20:55:07 INFO  : Successfully done setting workspace for the tool. 

@@ -29,3 +29,4 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform generate -domains zynq_fsbl 

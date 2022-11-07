@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x10FB45F10C8B0F1E",
+      "boundary_crc": "0x6271B70ACDFCC5C8",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../capture-test.gen/sources_1/bd/ebaz4205",
       "name": "ebaz4205",
@@ -227,18 +227,6 @@
           }
         }
       },
-      "ADC_in": {
-        "type": "data",
-        "direction": "I",
-        "left": "12",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
       "ADC_clk_64M": {
         "type": "clk",
         "direction": "O",
@@ -260,6 +248,28 @@
           },
           "PHASE": {
             "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "OTR": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ADC_in": {
+        "type": "data",
+        "direction": "I",
+        "left": "11",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
             "value_src": "default"
           }
         }
@@ -2079,6 +2089,9 @@
           "DATA_Has_TLAST": {
             "value": "Not_Required"
           },
+          "DDS_Clock_Rate": {
+            "value": "64"
+          },
           "Frequency_Resolution": {
             "value": "1"
           },
@@ -2086,13 +2099,16 @@
             "value": "false"
           },
           "Latency": {
-            "value": "8"
+            "value": "6"
           },
           "M_DATA_Has_TUSER": {
             "value": "Not_Required"
           },
           "Noise_Shaping": {
             "value": "Auto"
+          },
+          "OUTPUT_FORM": {
+            "value": "Sign_and_Magnitude"
           },
           "Output_Frequency1": {
             "value": "1"
@@ -2104,7 +2120,7 @@
             "value": "16"
           },
           "PINC1": {
-            "value": "101000111101011100001"
+            "value": "100000000000000000000"
           },
           "Parameter_Entry": {
             "value": "System_Parameters"
@@ -2113,7 +2129,7 @@
             "value": "Programmable"
           },
           "Phase_Width": {
-            "value": "27"
+            "value": "26"
           },
           "Phase_offset": {
             "value": "None"
@@ -2167,7 +2183,7 @@
             "value": "1"
           },
           "C_DOUT_DEFAULT": {
-            "value": "0x00147AE1"
+            "value": "0x00100000"
           },
           "C_GPIO2_WIDTH": {
             "value": "1"
@@ -2407,10 +2423,16 @@
         "inst_hier_path": "xlconcat_2",
         "parameters": {
           "IN0_WIDTH": {
-            "value": "3"
+            "value": "1"
           },
           "IN1_WIDTH": {
-            "value": "13"
+            "value": "3"
+          },
+          "IN2_WIDTH": {
+            "value": "12"
+          },
+          "NUM_PORTS": {
+            "value": "3"
           }
         }
       },
@@ -2421,7 +2443,7 @@
         "inst_hier_path": "xlconstant_2",
         "parameters": {
           "CONST_VAL": {
-            "value": "b00"
+            "value": "b000"
           },
           "CONST_WIDTH": {
             "value": "3"
@@ -2494,7 +2516,7 @@
       "ADC_in_1": {
         "ports": [
           "ADC_in",
-          "xlconcat_2/In1"
+          "xlconcat_2/In2"
         ]
       },
       "ENET0_GMII_RX_CLK_0_1": {
@@ -2520,6 +2542,12 @@
         "ports": [
           "enet0_gmii_rxd",
           "PS/enet0_gmii_rxd"
+        ]
+      },
+      "OTR_1": {
+        "ports": [
+          "OTR",
+          "xlconcat_2/In0"
         ]
       },
       "PS_ARESETN": {
@@ -2622,7 +2650,7 @@
       "xlconstant_2_dout": {
         "ports": [
           "xlconstant_2/dout",
-          "xlconcat_2/In0"
+          "xlconcat_2/In1"
         ]
       },
       "xlslice_0_Dout": {
@@ -2635,8 +2663,7 @@
     "comments": {
       "/": {
         "comment_0": "PS groups:\n- Programmable System(CPU)\n- Reset\n- AXI control\n- Ethernet",
-        "comment_2": "select_input:\n0 : RF_test\n1 : ADC\n",
-        "comment_3": "ADC_in[11:0] : ADC\nADC_in[12]    : OTR"
+        "comment_2": "select_input:\n0 : RF_test\n1 : ADC\n"
       }
     },
     "addressing": {

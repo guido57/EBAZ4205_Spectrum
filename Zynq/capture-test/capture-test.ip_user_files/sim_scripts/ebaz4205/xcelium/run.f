@@ -136,13 +136,6 @@
   "../../../bd/ebaz4205/ip/ebaz4205_axis_mux_0_0/sim/ebaz4205_axis_mux_0_0.v" \
   "../../../bd/ebaz4205/ip/ebaz4205_xlconcat_2_0/sim/ebaz4205_xlconcat_2_0.v" \
   "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_2_0/sim/ebaz4205_xlconstant_2_0.v" \
-  "../../../bd/ebaz4205/sim/ebaz4205.v" \
--endlib
--makelib xcelium_lib/axi_protocol_converter_v2_1_25 \
-  "../../../../capture-test.gen/sources_1/bd/ebaz4205/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/ebaz4205/ip/ebaz4205_auto_pc_0/sim/ebaz4205_auto_pc_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/sim/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0.vhd" \
@@ -150,6 +143,15 @@
   "../../../bd/ebaz4205/ipshared/2c69/axis_capture_logic.vhd" \
   "../../../bd/ebaz4205/ipshared/2c69/axis_capture.vhd" \
   "../../../bd/ebaz4205/ip/ebaz4205_axis_capture_0_4/sim/ebaz4205_axis_capture_0_4.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/sim/ebaz4205.v" \
+-endlib
+-makelib xcelium_lib/axi_protocol_converter_v2_1_25 \
+  "../../../../capture-test.gen/sources_1/bd/ebaz4205/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/ip/ebaz4205_auto_pc_0/sim/ebaz4205_auto_pc_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

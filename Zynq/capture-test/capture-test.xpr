@@ -56,20 +56,20 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="21"/>
+    <Option Name="WTXSimLaunchSim" Val="25"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="18"/>
-    <Option Name="WTModelSimExportSim" Val="18"/>
-    <Option Name="WTQuestaExportSim" Val="18"/>
+    <Option Name="WTXSimExportSim" Val="21"/>
+    <Option Name="WTModelSimExportSim" Val="21"/>
+    <Option Name="WTQuestaExportSim" Val="21"/>
     <Option Name="WTIesExportSim" Val="5"/>
-    <Option Name="WTVcsExportSim" Val="18"/>
-    <Option Name="WTRivieraExportSim" Val="18"/>
-    <Option Name="WTActivehdlExportSim" Val="18"/>
+    <Option Name="WTVcsExportSim" Val="21"/>
+    <Option Name="WTRivieraExportSim" Val="21"/>
+    <Option Name="WTActivehdlExportSim" Val="21"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -100,26 +100,26 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_axis_capture_0_4/ebaz4205_axis_capture_0_4.xci">
-          <Proxy FileSetName="ebaz4205_axis_capture_0_4"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0.xci">
-          <Proxy FileSetName="ebaz4205_axi_gpio_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_xbar_0/ebaz4205_xbar_0.xci">
-          <Proxy FileSetName="ebaz4205_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_axis_mux_0_0/ebaz4205_axis_mux_0_0.xci">
-          <Proxy FileSetName="ebaz4205_axis_mux_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xci">
-          <Proxy FileSetName="ebaz4205_processing_system7_0_0"/>
+        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_axi_gpio_0_0/ebaz4205_axi_gpio_0_0.xci">
+          <Proxy FileSetName="ebaz4205_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_dds_compiler_0_0/ebaz4205_dds_compiler_0_0.xci">
           <Proxy FileSetName="ebaz4205_dds_compiler_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_axi_gpio_0_0/ebaz4205_axi_gpio_0_0.xci">
-          <Proxy FileSetName="ebaz4205_axi_gpio_0_0"/>
+        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0.xci">
+          <Proxy FileSetName="ebaz4205_axi_gpio_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_axis_mux_0_0/ebaz4205_axis_mux_0_0.xci">
+          <Proxy FileSetName="ebaz4205_axis_mux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_xbar_0/ebaz4205_xbar_0.xci">
+          <Proxy FileSetName="ebaz4205_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xci">
+          <Proxy FileSetName="ebaz4205_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ebaz4205.bd" FileRelPathName="ip/ebaz4205_axis_capture_0_4/ebaz4205_axis_capture_0_4.xci">
+          <Proxy FileSetName="ebaz4205_axis_capture_0_4"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/ebaz4205/hdl/ebaz4205_wrapper.v">
@@ -347,9 +347,7 @@
     </Run>
     <Run Id="ebaz4205_axis_capture_0_4_synth_1" Type="Ft3:Synth" SrcSet="ebaz4205_axis_capture_0_4" Part="xc7z010clg400-1" ConstrsSet="ebaz4205_axis_capture_0_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ebaz4205_axis_capture_0_4_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ebaz4205_axis_capture_0_4_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -479,9 +477,7 @@
     </Run>
     <Run Id="ebaz4205_axis_capture_0_4_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="ebaz4205_axis_capture_0_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ebaz4205_axis_capture_0_4_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ebaz4205_axis_capture_0_4_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

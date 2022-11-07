@@ -56,17 +56,19 @@
 module ebaz4205_xlconcat_2_0 (
   In0,
   In1,
+  In2,
   dout
 );
 
-input wire [2 : 0] In0;
-input wire [12 : 0] In1;
+input wire [0 : 0] In0;
+input wire [2 : 0] In1;
+input wire [11 : 0] In2;
 output wire [15 : 0] dout;
 
   xlconcat_v2_1_4_xlconcat #(
-    .IN0_WIDTH(3),
-    .IN1_WIDTH(13),
-    .IN2_WIDTH(1),
+    .IN0_WIDTH(1),
+    .IN1_WIDTH(3),
+    .IN2_WIDTH(12),
     .IN3_WIDTH(1),
     .IN4_WIDTH(1),
     .IN5_WIDTH(1),
@@ -193,11 +195,11 @@ output wire [15 : 0] dout;
     .IN126_WIDTH(1),
     .IN127_WIDTH(1),
     .dout_width(16),
-    .NUM_PORTS(2)
+    .NUM_PORTS(3)
   ) inst (
     .In0(In0),
     .In1(In1),
-    .In2(1'B0),
+    .In2(In2),
     .In3(1'B0),
     .In4(1'B0),
     .In5(1'B0),

@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-//Date        : Wed Nov  2 21:06:15 2022
+//Date        : Fri Nov  4 22:11:18 2022
 //Host        : DESKTOP-SQGSJV7 running 64-bit major release  (build 9200)
 //Command     : generate_target ebaz4205.bd
 //Design      : ebaz4205
@@ -884,10 +884,8 @@ endmodule
 select_input:
 0 : RF_test
 1 : ADC
-
-ADC_in[11:0] : ADC
-ADC_in[12]    : OTR */
-(* CORE_GENERATION_INFO = "ebaz4205,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=ebaz4205,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=26,numReposBlks=19,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,\"\"\"\"\"\"\"\"\"\"da_axi4_cnt\"\"\"\"\"\"\"\"\"\"=1,\"\"\"\"\"\"\"\"\"\"da_board_cnt\"\"\"\"\"\"\"\"\"\"=1,\"\"\"\"\"\"\"\"\"\"da_clkrst_cnt\"\"\"\"\"\"\"\"\"\"=2,\"\"\"\"\"da_axi4_cnt\"\"\"\"\"=1,\"\"da_clkrst_cnt\"\"=1,da_axi4_cnt=3,da_board_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "ebaz4205.hwdef" *) 
+ */
+(* CORE_GENERATION_INFO = "ebaz4205,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=ebaz4205,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=26,numReposBlks=19,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,\"\"\"\"\"\"\"\"\"\"\"da_axi4_cnt\"\"\"\"\"\"\"\"\"\"\"=1,\"\"\"\"\"\"\"\"\"\"\"da_board_cnt\"\"\"\"\"\"\"\"\"\"\"=1,\"\"\"\"\"\"\"\"\"\"\"da_clkrst_cnt\"\"\"\"\"\"\"\"\"\"\"=2,\"\"\"\"\"\"da_axi4_cnt\"\"\"\"\"\"=1,\"\"\"da_clkrst_cnt\"\"\"=1,\"da_axi4_cnt\"=3,\"da_board_cnt\"=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "ebaz4205.hwdef" *) 
 module ebaz4205
    (ADC_clk_64M,
     ADC_in,
@@ -922,10 +920,11 @@ module ebaz4205
     MDIO_ETHERNET_0_0_mdio_i,
     MDIO_ETHERNET_0_0_mdio_o,
     MDIO_ETHERNET_0_0_mdio_t,
+    OTR,
     enet0_gmii_rxd,
     enet0_gmii_txd);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ADC_CLK_64M CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ADC_CLK_64M, CLK_DOMAIN ebaz4205_processing_system7_0_0_FCLK_CLK1, FREQ_HZ 64000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) output ADC_clk_64M;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.ADC_IN DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.ADC_IN, LAYERED_METADATA undef" *) input [12:0]ADC_in;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.ADC_IN DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.ADC_IN, LAYERED_METADATA undef" *) input [11:0]ADC_in;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *) inout DDR_cas_n;
@@ -957,14 +956,16 @@ module ebaz4205
   (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 MDIO_ETHERNET_0_0 MDIO_I" *) input MDIO_ETHERNET_0_0_mdio_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 MDIO_ETHERNET_0_0 MDIO_O" *) output MDIO_ETHERNET_0_0_mdio_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 MDIO_ETHERNET_0_0 MDIO_T" *) output MDIO_ETHERNET_0_0_mdio_t;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.OTR DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.OTR, LAYERED_METADATA undef" *) input OTR;
   input [3:0]enet0_gmii_rxd;
   output [3:0]enet0_gmii_txd;
 
-  wire [12:0]ADC_in_1;
+  wire [11:0]ADC_in_1;
   wire ENET0_GMII_RX_CLK_0_1;
   wire ENET0_GMII_RX_DV_0_1;
   wire ENET0_GMII_TX_CLK_0_1;
   wire [3:0]In0_0_1;
+  wire OTR_1;
   wire [0:0]PS_ARESETN;
   wire PS_FCLK_CLK0;
   wire PS_FCLK_CLK1;
@@ -1064,7 +1065,7 @@ module ebaz4205
   wire [3:0]xlslice_0_Dout;
 
   assign ADC_clk_64M = PS_FCLK_CLK1;
-  assign ADC_in_1 = ADC_in[12:0];
+  assign ADC_in_1 = ADC_in[11:0];
   assign ENET0_GMII_RX_CLK_0_1 = ENET0_GMII_RX_CLK_0;
   assign ENET0_GMII_RX_DV_0_1 = ENET0_GMII_RX_DV_0;
   assign ENET0_GMII_TX_CLK_0_1 = ENET0_GMII_TX_CLK_0;
@@ -1075,6 +1076,7 @@ module ebaz4205
   assign MDIO_ETHERNET_0_0_mdc = processing_system7_0_MDIO_ETHERNET_0_MDC;
   assign MDIO_ETHERNET_0_0_mdio_o = processing_system7_0_MDIO_ETHERNET_0_MDIO_O;
   assign MDIO_ETHERNET_0_0_mdio_t = processing_system7_0_MDIO_ETHERNET_0_MDIO_T;
+  assign OTR_1 = OTR;
   assign enet0_gmii_txd[3:0] = xlslice_0_Dout;
   assign processing_system7_0_MDIO_ETHERNET_0_MDIO_I = MDIO_ETHERNET_0_0_mdio_i;
   PS_imp_1B1U9UK PS
@@ -1251,7 +1253,7 @@ module ebaz4205
         .s_axi_wready(PS_M03_AXI_WREADY),
         .s_axi_wstrb(PS_M03_AXI_WSTRB),
         .s_axi_wvalid(PS_M03_AXI_WVALID));
-  ebaz4205_axis_capture_0_4 axis_capture_0
+  ebaz4205_axis_capture_0_4 axis_capture_RF
        (.capture_clk(PS_FCLK_CLK1),
         .capture_data(xlconcat_1_dout),
         .capture_valid(axis_mux_0_output_axis_tvalid),
@@ -1300,8 +1302,9 @@ module ebaz4205
         .In1(axis_mux_0_output_axis_tdata),
         .dout(xlconcat_1_dout));
   ebaz4205_xlconcat_2_0 xlconcat_2
-       (.In0(xlconstant_2_dout),
-        .In1(ADC_in_1),
+       (.In0(OTR_1),
+        .In1(xlconstant_2_dout),
+        .In2(ADC_in_1),
         .dout(xlconcat_2_dout));
   ebaz4205_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));

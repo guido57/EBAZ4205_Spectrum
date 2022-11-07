@@ -1,21 +1,6 @@
-19:56:38 **** Incremental Build of configuration Debug for project TCP_server ****
+20:22:04 **** Build of configuration Debug for project TCP_server ****
 make all 
-'Building file: ../src/main.cpp'
-'Invoking: ARM v7 Linux g++ compiler'
-arm-linux-gnueabihf-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-'Finished building: ../src/main.cpp'
-' '
-'Building target: TCP_server.elf'
-'Invoking: ARM v7 Linux g++ linker'
-arm-linux-gnueabihf-g++  -o "TCP_server.elf"  ./src/DDS.o ./src/IP_Driver.o ./src/MUX.o ./src/data_capture.o ./src/main.o   
-'Finished building target: TCP_server.elf'
-' '
-'Invoking: ARM v7 Linux Print Size'
-arm-linux-gnueabihf-size TCP_server.elf  |tee "TCP_server.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  13069	    536	     40	  13645	   354d	TCP_server.elf
-'Finished building: TCP_server.elf.size'
-' '
+make: Nothing to be done for 'all'.
 
-19:56:39 Build Finished (took 552ms)
+20:22:04 Build Finished (took 94ms)
 

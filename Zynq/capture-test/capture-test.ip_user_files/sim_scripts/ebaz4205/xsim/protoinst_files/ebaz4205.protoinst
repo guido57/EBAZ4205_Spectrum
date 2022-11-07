@@ -838,7 +838,7 @@
 						"WVALID": { "actual": "s_axi_wvalid"}
 					}
 				},
-				"/axis_capture_0/ctrl_s_axi": {
+				"/axis_capture_RF/ctrl_s_axi": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
 						"ACLK": { "actual": "ctrl_s_axi_aclk"},

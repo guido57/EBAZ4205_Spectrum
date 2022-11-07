@@ -160,7 +160,7 @@ BEGIN
       C_CTRL_S_AXI_DATA_WIDTH => 32,
       C_CTRL_S_AXI_ADDR_WIDTH => 5,
       C_CAPTURE_DATA_BYTES => 4,
-      C_CAPTURE_NUM_WORDS_EXP2 => 11,
+      C_CAPTURE_NUM_WORDS_EXP2 => 14,
       C_IGNORE_VALID => false
     )
     PORT MAP (

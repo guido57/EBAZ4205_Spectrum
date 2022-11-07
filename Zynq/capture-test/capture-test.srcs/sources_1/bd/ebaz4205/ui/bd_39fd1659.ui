@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.707434",
-   "Default View_TopLeft":"799,358",
+   "Default View_TopLeft":"2591,303",
    "ExpandedHierarchyInLayout":"",
    "PinnedBlocks":"",
    "PinnedPorts":"",
@@ -14,124 +14,87 @@
 0 : RF_test
 1 : ADC
 ",
-   "comment_3":"ADC_in[11:0] : ADC
-ADC_in[12]    : OTR",
-   "commentid":"comment_0|comment_2|comment_3|",
+   "commentid":"comment_0|comment_2|",
    "fillcolor_comment_2":"",
-   "fillcolor_comment_3":"",
    "font_comment_0":"11",
    "font_comment_2":"11",
-   "font_comment_3":"11",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 7 -x 4080 -y 310 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 7 -x 4080 -y 330 -defaultsOSRD
-preplace port MDIO_ETHERNET_0_0 -pg 1 -lvl 7 -x 4080 -y 290 -defaultsOSRD
-preplace port port-id_ENET0_GMII_RX_CLK_0 -pg 1 -lvl 0 -x -40 -y 380 -defaultsOSRD
-preplace port port-id_ENET0_GMII_RX_DV_0 -pg 1 -lvl 0 -x -40 -y 400 -defaultsOSRD
-preplace port port-id_ENET0_GMII_TX_CLK_0 -pg 1 -lvl 0 -x -40 -y 420 -defaultsOSRD
-preplace port port-id_FCLK_CLK3_0 -pg 1 -lvl 7 -x 4080 -y 390 -defaultsOSRD
-preplace port port-id_ADC_clk_64M -pg 1 -lvl 7 -x 4080 -y 370 -defaultsOSRD
-preplace portBus ENET0_GMII_TX_EN_0 -pg 1 -lvl 7 -x 4080 -y 350 -defaultsOSRD
-preplace portBus LED -pg 1 -lvl 7 -x 4080 -y 220 -defaultsOSRD
-preplace portBus enet0_gmii_rxd -pg 1 -lvl 0 -x -40 -y 440 -defaultsOSRD
-preplace portBus enet0_gmii_txd -pg 1 -lvl 7 -x 4080 -y 570 -defaultsOSRD
-preplace portBus ADC_in -pg 1 -lvl 0 -x -40 -y 830 -defaultsOSRD
-preplace inst PS -pg 1 -lvl 5 -x 1640 -y 270 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 6 -x 3900 -y 90 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 6 -x 3900 -y 220 -defaultsOSRD
-preplace inst RF_test_1MHz -pg 1 -lvl 2 -x 360 -y 650 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 4070 -y 310 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 4070 -y 330 -defaultsOSRD
+preplace port MDIO_ETHERNET_0_0 -pg 1 -lvl 7 -x 4070 -y 290 -defaultsOSRD
+preplace port port-id_ENET0_GMII_RX_CLK_0 -pg 1 -lvl 0 -x -70 -y 380 -defaultsOSRD
+preplace port port-id_ENET0_GMII_RX_DV_0 -pg 1 -lvl 0 -x -70 -y 400 -defaultsOSRD
+preplace port port-id_ENET0_GMII_TX_CLK_0 -pg 1 -lvl 0 -x -70 -y 420 -defaultsOSRD
+preplace port port-id_FCLK_CLK3_0 -pg 1 -lvl 7 -x 4070 -y 390 -defaultsOSRD
+preplace port port-id_ADC_clk_64M -pg 1 -lvl 7 -x 4070 -y 370 -defaultsOSRD
+preplace port port-id_OTR -pg 1 -lvl 0 -x -70 -y 730 -defaultsOSRD
+preplace portBus ENET0_GMII_TX_EN_0 -pg 1 -lvl 7 -x 4070 -y 350 -defaultsOSRD
+preplace portBus LED -pg 1 -lvl 7 -x 4070 -y 220 -defaultsOSRD
+preplace portBus enet0_gmii_rxd -pg 1 -lvl 0 -x -70 -y 440 -defaultsOSRD
+preplace portBus enet0_gmii_txd -pg 1 -lvl 7 -x 4070 -y 570 -defaultsOSRD
+preplace portBus ADC_in -pg 1 -lvl 0 -x -70 -y 830 -defaultsOSRD
+preplace inst PS -pg 1 -lvl 5 -x 1620 -y 270 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -x 3880 -y 90 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 6 -x 3880 -y 220 -defaultsOSRD
+preplace inst RF_test_1MHz -pg 1 -lvl 2 -x 340 -y 650 -defaultsOSRD
 preplace inst xlconcat_1 -pg 1 -lvl 4 -x 1120 -y 880 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 3 -x 780 -y 870 -defaultsOSRD
-preplace inst axi_gpio_dds -pg 1 -lvl 6 -x 3900 -y 480 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 1 -x 80 -y 660 -defaultsOSRD
+preplace inst axi_gpio_dds -pg 1 -lvl 6 -x 3880 -y 480 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x 60 -y 660 -defaultsOSRD
 preplace inst axis_mux_0 -pg 1 -lvl 3 -x 780 -y 700 -defaultsOSRD
-preplace inst xlconcat_2 -pg 1 -lvl 2 -x 360 -y 820 -defaultsOSRD
-preplace inst xlconstant_2 -pg 1 -lvl 1 -x 80 -y 770 -defaultsOSRD
-preplace inst rst_ENET0_GMII_RX_CLK_0_100M -pg 1 -lvl 5 -x 1640 -y 0 -defaultsOSRD
-preplace inst axis_capture_RF -pg 1 -lvl 5 -x 1640 -y 1120 -defaultsOSRD
-preplace inst PS|xlslice_0 -pg 1 -lvl 2 -x 2380 -y 740 -defaultsOSRD
-preplace inst PS|xlslice_1 -pg 1 -lvl 2 -x 2380 -y 580 -defaultsOSRD
-preplace inst PS|proc_sys_reset_0 -pg 1 -lvl 1 -x 1770 -y 770 -defaultsOSRD
-preplace inst PS|processing_system7_0 -pg 1 -lvl 1 -x 1770 -y 450 -defaultsOSRD
-preplace inst PS|xlconcat_0 -pg 1 -lvl 1 -x 1770 -y 920 -defaultsOSRD
-preplace inst PS|ps7_axi_periph -pg 1 -lvl 2 -x 2380 -y 310 -defaultsOSRD
-preplace netloc ADC_in_1 1 0 2 NJ 830 NJ
-preplace netloc ENET0_GMII_RX_CLK_0_1 1 0 5 -20J 210 NJ 210 NJ 210 NJ 210 1220J
-preplace netloc ENET0_GMII_RX_DV_0_1 1 0 5 -10J 220 NJ 220 NJ 220 NJ 220 NJ
-preplace netloc ENET0_GMII_TX_CLK_0_1 1 0 5 0J 240 NJ 240 NJ 240 NJ 240 NJ
-preplace netloc In0_0_1 1 0 5 NJ 440 NJ 440 NJ 440 NJ 440 1250J
-preplace netloc PS_FCLK_CLK3_0 1 5 2 2850J 390 NJ
-preplace netloc axi_gpio_0_gpio_io_o 1 5 2 2860 290 4040
-preplace netloc axi_gpio_1_gpio_io_o 1 1 6 170 1280 NJ 1280 NJ 1280 NJ 1280 NJ 1280 4040
-preplace netloc axi_gpio_dds_gpio2_io_o 1 2 5 570 -100 NJ -100 NJ -100 NJ -100 4050
+preplace inst xlconcat_2 -pg 1 -lvl 2 -x 340 -y 820 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 1 -x 60 -y 820 -defaultsOSRD
+preplace inst rst_ENET0_GMII_RX_CLK_0_100M -pg 1 -lvl 5 -x 1620 -y 0 -defaultsOSRD
+preplace inst axis_capture_RF -pg 1 -lvl 5 -x 1620 -y 1120 -defaultsOSRD
+preplace netloc ENET0_GMII_RX_CLK_0_1 1 0 5 -50J 260 NJ 260 NJ 260 NJ 260 1240J
+preplace netloc ENET0_GMII_RX_DV_0_1 1 0 5 -40J 270 NJ 270 NJ 270 NJ 270 NJ
+preplace netloc ENET0_GMII_TX_CLK_0_1 1 0 5 -30J 290 NJ 290 NJ 290 NJ 290 NJ
+preplace netloc In0_0_1 1 0 5 -20J 310 NJ 310 NJ 310 NJ 310 NJ
+preplace netloc PS_ARESETN 1 4 2 1250 440 1820
+preplace netloc PS_FCLK_CLK0 1 4 2 1270 470 1870
+preplace netloc PS_FCLK_CLK1 1 1 6 150 740 520 810 N 810 1240 460 1840 370 N
+preplace netloc PS_FCLK_CLK3_0 1 5 2 1840J 340 4040J
+preplace netloc axi_gpio_0_gpio_io_o 1 5 2 1890 0 4030
+preplace netloc axi_gpio_1_gpio_io_o 1 1 6 150 480 NJ 480 NJ 480 NJ 480 1860J 390 4020
+preplace netloc axi_gpio_dds_gpio2_io_o 1 2 5 550 590 NJ 590 NJ 590 NJ 590 4020
 preplace netloc axis_mux_0_output_axis_tdata 1 3 1 990 700n
-preplace netloc processing_system7_0_ENET0_GMII_TX_EN 1 5 2 2830J 350 NJ
+preplace netloc axis_mux_0_output_axis_tvalid 1 3 2 NJ 720 1230
+preplace netloc processing_system7_0_ENET0_GMII_TX_EN 1 5 2 1840J -10 4050J
 preplace netloc xlconcat_0_dout 1 6 1 NJ 220
-preplace netloc xlconcat_2_dout 1 2 1 550 690n
+preplace netloc xlconcat_1_dout 1 4 1 1220 880n
+preplace netloc xlconcat_2_dout 1 2 1 530 690n
 preplace netloc xlconstant_0_dout 1 3 1 NJ 870
-preplace netloc xlconstant_1_dout 1 1 2 160 560 560
-preplace netloc xlconstant_2_dout 1 1 1 160J 770n
-preplace netloc xlslice_0_Dout 1 5 2 2870J 570 NJ
-preplace netloc xlconcat_1_dout 1 4 1 1230 880n
-preplace netloc axis_mux_0_output_axis_tvalid 1 3 2 NJ 720 1240
-preplace netloc PS_ARESETN 1 4 2 1260 1250 2770
-preplace netloc PS_FCLK_CLK1 1 1 6 180 740 540 810 N 810 1220 1270 2860 370 N
-preplace netloc PS_FCLK_CLK0 1 4 2 1270 1260 2820
-preplace netloc PS_M02_AXI 1 5 1 2790 70n
-preplace netloc PS_M03_AXI 1 5 1 2840 460n
+preplace netloc xlconstant_1_dout 1 1 2 140 560 540
+preplace netloc xlslice_0_Dout 1 5 2 NJ 350 4030J
+preplace netloc xlconstant_2_dout 1 1 1 N 820
+preplace netloc OTR_1 1 0 2 NJ 730 140
+preplace netloc ADC_in_1 1 0 2 -40J 880 150
+preplace netloc PS_M00_AXI 1 4 2 1260 450 1830
+preplace netloc PS_M02_AXI 1 5 1 1850 70n
+preplace netloc PS_M03_AXI 1 5 1 1850 270n
 preplace netloc RF_test_1MHz_M_AXIS_DATA 1 2 1 N 650
-preplace netloc processing_system7_0_DDR 1 5 2 2800J 310 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 5 2 2810J 330 NJ
-preplace netloc processing_system7_0_MDIO_ETHERNET_0 1 5 2 2780J 300 4060J
-preplace netloc PS_M00_AXI 1 4 2 1280 1240 2780
-preplace netloc PS|ENET0_GMII_RX_CLK_0_1 1 0 2 NJ 200 2030
-preplace netloc PS|ENET0_GMII_RX_DV_0_1 1 0 2 1470J 190 2050
-preplace netloc PS|ENET0_GMII_TX_CLK_0_1 1 0 2 1490J 230 2040
-preplace netloc PS|In0_0_1 1 0 1 N 910
-preplace netloc PS|proc_sys_reset_0_peripheral_aresetn 1 1 2 2120 800 NJ
-preplace netloc PS|processing_system7_0_ENET0_GMII_TXD 1 1 1 2080 330n
-preplace netloc PS|processing_system7_0_ENET0_GMII_TX_EN 1 1 2 2060 130 2570J
-preplace netloc PS|processing_system7_0_FCLK_CLK0 1 0 3 1500 220 2100 520 2530J
-preplace netloc PS|processing_system7_0_FCLK_CLK3 1 1 2 2050 680 NJ
-preplace netloc PS|processing_system7_0_FCLK_RESET0_N 1 0 2 1510 670 2030
-preplace netloc PS|processing_system7_0_GPIO_O 1 1 1 2090J 470n
-preplace netloc PS|xlconcat_0_dout 1 1 1 2040 410n
-preplace netloc PS|xlslice_0_Dout 1 2 1 NJ 740
-preplace netloc PS|processing_system7_0_FCLK_CLK1 1 1 2 2060J 640 2560
-preplace netloc PS|Conn1 1 2 1 2580 300n
-preplace netloc PS|Conn2 1 2 1 2560 320n
-preplace netloc PS|Conn3 1 0 1 1480 180n
-preplace netloc PS|Conn4 1 2 1 2540 340n
-preplace netloc PS|processing_system7_0_DDR 1 1 2 N 490 NJ
-preplace netloc PS|processing_system7_0_FIXED_IO 1 1 2 N 510 NJ
-preplace netloc PS|processing_system7_0_MDIO_ETHERNET_0 1 1 2 2110 500 2550J
-preplace netloc PS|processing_system7_0_M_AXI_GP0 1 1 1 2070 190n
-preplace netloc PS|ps7_axi_periph_M00_AXI 1 2 1 2590 280n
-preplace cgraphic comment_3 place left 97 878 textcolor 4 linecolor 3 linewidth 2
+preplace netloc processing_system7_0_DDR 1 5 2 1880J 310 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 5 2 1860J 330 NJ
+preplace netloc processing_system7_0_MDIO_ETHERNET_0 1 5 2 1830J 10 4040J
 preplace cgraphic comment_2 place bot 848 -415 textcolor 4 linecolor 3 linewidth 2
 preplace cgraphic comment_0 place top 989 95 textcolor 4 linecolor 3 linewidth 2
-levelinfo -pg 1 -40 80 360 780 1120 1640 3900 4080
-levelinfo -hier PS * 1770 2380 *
-pagesize -pg 1 -db -bbox -sgen -260 -110 4320 1550
-pagesize -hier PS -db -bbox -sgen 1440 120 2620 990
+levelinfo -pg 1 -70 60 340 780 1120 1620 3880 4070
+pagesize -pg 1 -db -bbox -sgen -290 -110 4310 1550
 ",
    "linecolor_comment_2":"",
-   "linecolor_comment_3":"",
-   "textcolor_comment_2":"",
-   "textcolor_comment_3":""
+   "textcolor_comment_2":""
 }
 {
-   """""""""""da_axi4_cnt""""""""""":"1",
-   """""""""""da_board_cnt""""""""""":"1",
-   """""""""""da_clkrst_cnt""""""""""":"2",
-   """"""da_axi4_cnt"""""":"1",
-   """da_clkrst_cnt""":"1",
-   "da_axi4_cnt":"3",
-   "da_board_cnt":"2"
+   """"""""""""da_axi4_cnt"""""""""""":"1",
+   """"""""""""da_board_cnt"""""""""""":"1",
+   """"""""""""da_clkrst_cnt"""""""""""":"2",
+   """""""da_axi4_cnt""""""":"1",
+   """"da_clkrst_cnt"""":"1",
+   ""da_axi4_cnt"":"3",
+   ""da_board_cnt"":"2"
 }
 {
    "/comment_0":"comment_0",
-   "/comment_2":"comment_2",
-   "/comment_3":"comment_3"
+   "/comment_2":"comment_2"
 }

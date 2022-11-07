@@ -298,3 +298,11 @@ timestamp=[2022-11-03 19:49:30], mode=BUILD, duration=0:00:00.571, duration_ms=5
 timestamp=[2022-11-03 19:50:05], mode=BUILD, duration=0:00:00.213, duration_ms=213, data={name=TCP_server, configuration=Debug, clean_build=false}
 timestamp=[2022-11-03 19:50:28], mode=BUILD, duration=0:00:00.557, duration_ms=557, data={name=TCP_server, configuration=Debug, clean_build=false}
 timestamp=[2022-11-03 19:56:39], mode=BUILD, duration=0:00:00.556, duration_ms=556, data={name=TCP_server, configuration=Debug, clean_build=false}
+timestamp=[2022-11-04 16:33:13], mode=WORKBENCH_START, duration=0:00:09.176, duration_ms=9176, data={}
+timestamp=[2022-11-04 16:33:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.085, duration_ms=85, data={}
+timestamp=[2022-11-04 16:33:14], mode=WORKBENCH_UI_INIT, duration=0:00:00.763, duration_ms=763, data={editors_count=3, platform_editors_count=0, projects_count=5, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TCP_server,capture_test_app_linux_system,capture_test_prj,pippo}
+timestamp=[2022-11-04 20:22:04], mode=PLATFORM_GENERATION, duration=0:00:07.023, duration_ms=7023, data={name=capture_test_prj}
+timestamp=[2022-11-04 20:22:04], mode=BUILD, duration=0:00:00.110, duration_ms=110, data={name=TCP_server, configuration=Debug, clean_build=false}
+timestamp=[2022-11-05 20:55:03], mode=WORKBENCH_START, duration=0:00:08.213, duration_ms=8213, data={}
+timestamp=[2022-11-05 20:55:04], mode=WORKBENCH_UI_INIT, duration=0:00:00.621, duration_ms=621, data={editors_count=1, platform_editors_count=0, projects_count=5, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TCP_server,capture_test_app_linux_system,capture_test_prj,pippo}
+timestamp=[2022-11-05 20:55:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.059, duration_ms=59, data={}

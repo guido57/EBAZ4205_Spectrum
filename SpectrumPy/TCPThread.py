@@ -69,15 +69,29 @@ class TCPThread(QThread):
     def send_signalRx(self,iq):
         # iq contains iq interleaved samples. I0 Q0 I1 Q1 ... I2047 Q2047
         # iq length should be 16384 bytes
+        countOTR = 0
         ii_int = list(range(0,self.CHUNK))
         qq_int = list(range(0,self.CHUNK)) # it should always be 0
         for i in range(0,self.CHUNK):
-            ii_int[i] = int.from_bytes(iq[i*8  :i*8+4],"little",signed=True)
-            qq_int[i] = int.from_bytes(iq[i*8+4:i*8+8],"little",signed=True)
-            
-        iq_int_np = np.array(ii_int)/1e6 + 1j*np.array(qq_int)/1e6
-        power, _ = mlab.psd(iq_int_np, NFFT=self.CHUNK, window=self.PSDwindow, Fs=100e6, scale_by_freq=False)
+            # samples are on 12 bits signed (from b31 to b19)
+            # b18=0 b17=0 b16=OTR b15 ... b0 =0 
+            ii_intb31_b0 = int.from_bytes(iq[i*8  :i*8+4],"little",signed=False) 
+            ii_int[i] =  ii_intb31_b0-2**31 #& 0xFFFFFFFF
+            ii_OTR = (ii_intb31_b0 & 0x00010000) >> 16
+            if(ii_OTR == 1):
+                countOTR = countOTR+1        
+            qq_intb31_b0 = int.from_bytes(iq[i*8+4:i*8+8],"little",signed=False)
+            qq_int[i] =  qq_intb31_b0 #& 0xFFFFFFFF
+            qq_OTR = (qq_intb31_b0 & 0x00010000) >> 16
+
+        if(countOTR>0):
+            a = 5
+
+        iq_int_np = np.array(ii_int) + 1j*np.array(qq_int)
+        
+        power, _ = mlab.psd(iq_int_np, NFFT=self.CHUNK, window=self.PSDwindow, Fs=64e6, scale_by_freq=False)
         power = power[len(power)>>1:] # get only the right spectrum (Freq >= 0)
+        
         self.signalRx.emit(np.sqrt(power))
         print(str(len(iq)) + " bytes at " + str(millis()) + " milliseconds" )
 

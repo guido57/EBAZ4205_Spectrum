@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date             : Wed Nov  2 21:35:55 2022
+| Date             : Sat Nov  5 19:55:09 2022
 | Host             : DESKTOP-SQGSJV7 running 64-bit major release  (build 9200)
 | Command          : report_power -file ebaz4205_wrapper_power_routed.rpt -pb ebaz4205_wrapper_power_summary_routed.pb -rpx ebaz4205_wrapper_power_routed.rpx
 | Design           : ebaz4205_wrapper
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.007 |        5 |       --- |             --- |
-| Slice Logic             |     0.002 |     2698 |       --- |             --- |
-|   LUT as Logic          |     0.002 |      798 |     17600 |            4.53 |
-|   Register              |    <0.001 |     1307 |     35200 |            3.71 |
+| Slice Logic             |     0.002 |     2629 |       --- |             --- |
+|   LUT as Logic          |     0.001 |      779 |     17600 |            4.43 |
+|   Register              |    <0.001 |     1272 |     35200 |            3.61 |
 |   CARRY4                |    <0.001 |       35 |      4400 |            0.80 |
 |   LUT as Shift Register |    <0.001 |       64 |      6000 |            1.07 |
-|   Others                |     0.000 |      244 |       --- |             --- |
-| Signals                 |     0.003 |     2072 |       --- |             --- |
+|   Others                |     0.000 |      236 |       --- |             --- |
+| Signals                 |     0.003 |     2038 |       --- |             --- |
 | Block RAM               |     0.045 |       18 |        60 |           30.00 |
 | I/O                     |     0.016 |       31 |       100 |           31.00 |
 | PS7                     |     1.284 |        1 |       --- |             --- |

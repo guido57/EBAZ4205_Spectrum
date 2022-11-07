@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Tue Nov  1 19:16:17 2022
+| Date         : Sat Nov  5 19:52:50 2022
 | Host         : DESKTOP-SQGSJV7 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ebaz4205_axi_gpio_1_0_utilization_synth.rpt -pb ebaz4205_axi_gpio_1_0_utilization_synth.pb
 | Design       : ebaz4205_axi_gpio_1_0
@@ -57,8 +57,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 12    |          Yes |         Set |            - |
-| 148   |          Yes |       Reset |            - |
+| 2     |          Yes |         Set |            - |
+| 158   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -147,14 +147,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  148 |        Flop & Latch |
+| FDRE     |  158 |        Flop & Latch |
 | LUT6     |   40 |                 LUT |
 | LUT3     |   39 |                 LUT |
-| FDSE     |   12 |        Flop & Latch |
 | LUT5     |   11 |                 LUT |
 | LUT2     |    9 |                 LUT |
 | LUT4     |    5 |                 LUT |
 | LUT1     |    2 |                 LUT |
+| FDSE     |    2 |        Flop & Latch |
 +----------+------+---------------------+
 
 

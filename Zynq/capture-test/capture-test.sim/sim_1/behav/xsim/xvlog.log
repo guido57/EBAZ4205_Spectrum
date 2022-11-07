@@ -35,5 +35,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/EBAZ4205_SDR/Zynq/capture-test/c
 INFO: [VRFC 10-311] analyzing module ebaz4205_auto_pc_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.gen/sources_1/bd/ebaz4205/hdl/ebaz4205_wrapper.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ebaz4205_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

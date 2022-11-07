@@ -22,10 +22,10 @@ WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_bid' [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7157]
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_rid' [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7175]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7176]
-WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 12 for port 'm_axi_arprot' [D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2106]
-WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 12 for port 'm_axi_awprot' [D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2110]
-WARNING: [VRFC 10-5021] port 'gpio_io_t' is not connected on this instance [D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:1210]
-WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:1288]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 12 for port 'm_axi_arprot' [D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2109]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 12 for port 'm_axi_awprot' [D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2113]
+WARNING: [VRFC 10-5021] port 'gpio_io_t' is not connected on this instance [D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:1212]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:1290]
 WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:616]
 WARNING: [VRFC 10-5021] port 'ENET0_GMII_RXD' is not connected on this instance [D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/sim/ebaz4205_processing_system7_0_0.v:315]
 WARNING: [VRFC 10-3027] 'ocm_wr_strb_port0' was previously declared with a different range [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:3809]
@@ -209,14 +209,12 @@ Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\x
 Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
 Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
 Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
-Compiling architecture synth of entity dds_compiler_v6_0_21.pipe_add [\pipe_add(c_width=27,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.pipe_add [\pipe_add(c_width=26,c_seg_width...]
 Compiling architecture synth of entity dds_compiler_v6_0_21.accum [\accum(c_xdevicefamily="zynq",c_...]
-Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
 Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
 Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
 Compiling architecture synth of entity dds_compiler_v6_0_21.sin_cos [\sin_cos(c_xdevicefamily="zynq",...]
-Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
 Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
 Compiling architecture synth of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21_core [\dds_compiler_v6_0_21_core(c_xde...]
 Compiling architecture synth of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21_viv [\dds_compiler_v6_0_21_viv(c_xdev...]
@@ -238,8 +236,8 @@ Compiling architecture imp of entity axi_gpio_v2_0_27.GPIO_Core [\GPIO_Core(c_aw
 Compiling architecture imp of entity axi_gpio_v2_0_27.axi_gpio [\axi_gpio(c_family="zynq",c_gpio...]
 Compiling architecture ebaz4205_axi_gpio_1_0_arch of entity xil_defaultlib.ebaz4205_axi_gpio_1_0 [ebaz4205_axi_gpio_1_0_default]
 Compiling architecture syn of entity xil_defaultlib.dp_ram_1r_1w_2clk [\dp_ram_1r_1w_2clk(bitwidth_data...]
-Compiling architecture arch_imp of entity xil_defaultlib.axis_capture_logic [axis_capture_logic_default]
-Compiling architecture arch_imp of entity xil_defaultlib.axis_capture [axis_capture_default]
+Compiling architecture arch_imp of entity xil_defaultlib.axis_capture_logic [\axis_capture_logic(c_capture_nu...]
+Compiling architecture arch_imp of entity xil_defaultlib.axis_capture [\axis_capture(c_capture_num_word...]
 Compiling architecture ebaz4205_axis_capture_0_4_arch of entity xil_defaultlib.ebaz4205_axis_capture_0_4 [ebaz4205_axis_capture_0_4_defaul...]
 Compiling architecture behavioral of entity xil_defaultlib.axis_mux [axis_mux_default]
 Compiling module xil_defaultlib.ebaz4205_axis_mux_0_0
@@ -248,7 +246,7 @@ Compiling module xlconcat_v2_1_4.xlconcat_v2_1_4_xlconcat_default
 Compiling module xil_defaultlib.ebaz4205_xlconcat_0_1
 Compiling module xlconcat_v2_1_4.xlconcat_v2_1_4_xlconcat(IN0_WID...
 Compiling module xil_defaultlib.ebaz4205_xlconcat_1_0
-Compiling module xlconcat_v2_1_4.xlconcat_v2_1_4_xlconcat(IN0_WID...
+Compiling module xlconcat_v2_1_4.xlconcat_v2_1_4_xlconcat(IN1_WID...
 Compiling module xil_defaultlib.ebaz4205_xlconcat_2_0
 Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
 Compiling module xil_defaultlib.ebaz4205_xlconstant_0_0

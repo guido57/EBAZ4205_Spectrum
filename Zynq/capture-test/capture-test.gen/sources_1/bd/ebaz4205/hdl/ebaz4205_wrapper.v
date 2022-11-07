@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-//Date        : Wed Nov  2 21:32:20 2022
+//Date        : Fri Nov  4 22:11:18 2022
 //Host        : DESKTOP-SQGSJV7 running 64-bit major release  (build 9200)
 //Command     : generate_target ebaz4205_wrapper.bd
 //Design      : ebaz4205_wrapper
@@ -41,10 +41,11 @@ module ebaz4205_wrapper
     LED,
     MDIO_ETHERNET_0_0_mdc,
     MDIO_ETHERNET_0_0_mdio_io,
+    OTR,
     enet0_gmii_rxd,
     enet0_gmii_txd);
   output ADC_clk_64M;
-  input [12:0]ADC_in;
+  input [11:0]ADC_in;
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -74,11 +75,12 @@ module ebaz4205_wrapper
   output [1:0]LED;
   output MDIO_ETHERNET_0_0_mdc;
   inout MDIO_ETHERNET_0_0_mdio_io;
+  input OTR;
   input [3:0]enet0_gmii_rxd;
   output [3:0]enet0_gmii_txd;
 
   wire ADC_clk_64M;
-  wire [12:0]ADC_in;
+  wire [11:0]ADC_in;
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -111,6 +113,7 @@ module ebaz4205_wrapper
   wire MDIO_ETHERNET_0_0_mdio_io;
   wire MDIO_ETHERNET_0_0_mdio_o;
   wire MDIO_ETHERNET_0_0_mdio_t;
+  wire OTR;
   wire [3:0]enet0_gmii_rxd;
   wire [3:0]enet0_gmii_txd;
 
@@ -153,6 +156,7 @@ module ebaz4205_wrapper
         .MDIO_ETHERNET_0_0_mdio_i(MDIO_ETHERNET_0_0_mdio_i),
         .MDIO_ETHERNET_0_0_mdio_o(MDIO_ETHERNET_0_0_mdio_o),
         .MDIO_ETHERNET_0_0_mdio_t(MDIO_ETHERNET_0_0_mdio_t),
+        .OTR(OTR),
         .enet0_gmii_rxd(enet0_gmii_rxd),
         .enet0_gmii_txd(enet0_gmii_txd));
 endmodule

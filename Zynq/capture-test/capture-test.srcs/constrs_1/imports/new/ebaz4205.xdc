@@ -64,5 +64,5 @@ set_property -dict { PACKAGE_PIN P19   IOSTANDARD LVCMOS33 } [get_ports { ADC_in
 set_property -dict { PACKAGE_PIN T20   IOSTANDARD LVCMOS33 } [get_ports { ADC_in[7]  }]; # DATA3_16
 set_property -dict { PACKAGE_PIN U20   IOSTANDARD LVCMOS33 } [get_ports { ADC_in[10] }]; # DATA3_17
 set_property -dict { PACKAGE_PIN T19   IOSTANDARD LVCMOS33 } [get_ports { ADC_in[9]  }]; # DATA3_18 
-set_property -dict { PACKAGE_PIN V20   IOSTANDARD LVCMOS33 } [get_ports { ADC_in[12] }]; # DATA3_19 
+set_property -dict { PACKAGE_PIN V20   IOSTANDARD LVCMOS33 } [get_ports { OTR        }]; # DATA3_19 
 set_property -dict { PACKAGE_PIN U19   IOSTANDARD LVCMOS33 } [get_ports { ADC_in[11] }]; # DATA3_20
