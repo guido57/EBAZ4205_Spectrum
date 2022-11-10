@@ -7564,3 +7564,99 @@ java.lang.Exception: Channel is closed
 "vivado_version": "2021.2",
 "part": "xc7z010clg400-1",
 }]. Thread: main
+
+!ENTRY org.eclipse.tcf 4 0 2022-11-08 22:56:33.441
+!MESSAGE TCF channel terminated
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)
+!SESSION 2022-11-09 19:33:53.259 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-09 19:34:11.931
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2022-11-09 19:34:15.526
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-09 19:34:20.633
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-09 19:34:20.634
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-09 19:34:20.634
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:34:21.669
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:34:21.670
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:34:21.703
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:34:21.704
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:34:21.706
+!MESSAGE XSCT Command: [setws D:/EBAZ4205_SDR/Vitis/ws_capture_test], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:34:21.716
+!MESSAGE XSCT command with result: [setws D:/EBAZ4205_SDR/Vitis/ws_capture_test], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:34:21.895
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:34:25.513
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:34:25.514
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:34:25.515
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, d:/Xilinx/Vitis/2021.2/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:35:08.199
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Thread: Worker-3: Launching Debugger_TCP_server-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:35:09.995
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Result: [null, ]. Thread: Worker-3: Launching Debugger_TCP_server-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:35:09.996
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Thread: Worker-3: Launching Debugger_TCP_server-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-09 19:35:09.999
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Result: [null, {"device": "7z010",
+"family": "zynq",
+"timestamp": "Wed Oct  5 21:01:41 2022",
+"vivado_version": "2021.2",
+"part": "xc7z010clg400-1",
+}]. Thread: Worker-3: Launching Debugger_TCP_server-Default
+
+!ENTRY org.eclipse.tcf 4 0 2022-11-10 08:39:13.337
+!MESSAGE Cannot send datagram packet to /192.168.1.255
+!STACK 0
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendDatagramPacket(LocatorService.java:965)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendEmptyPacket(LocatorService.java:1102)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendAll(LocatorService.java:1119)
+	at org.eclipse.tcf.internal.services.local.LocatorService.refresh_timer(LocatorService.java:715)
+	at org.eclipse.tcf.internal.services.local.LocatorService$1$1.run(LocatorService.java:233)
+	at org.eclipse.tcf.protocol.Protocol$3.run(Protocol.java:243)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)

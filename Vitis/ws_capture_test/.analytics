@@ -306,3 +306,6 @@ timestamp=[2022-11-04 20:22:04], mode=BUILD, duration=0:00:00.110, duration_ms=1
 timestamp=[2022-11-05 20:55:03], mode=WORKBENCH_START, duration=0:00:08.213, duration_ms=8213, data={}
 timestamp=[2022-11-05 20:55:04], mode=WORKBENCH_UI_INIT, duration=0:00:00.621, duration_ms=621, data={editors_count=1, platform_editors_count=0, projects_count=5, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TCP_server,capture_test_app_linux_system,capture_test_prj,pippo}
 timestamp=[2022-11-05 20:55:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.059, duration_ms=59, data={}
+timestamp=[2022-11-09 19:34:21], mode=WORKBENCH_START, duration=0:00:09.121, duration_ms=9121, data={}
+timestamp=[2022-11-09 19:34:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.064, duration_ms=64, data={}
+timestamp=[2022-11-09 19:34:22], mode=WORKBENCH_UI_INIT, duration=0:00:00.669, duration_ms=669, data={editors_count=1, platform_editors_count=0, projects_count=5, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TCP_server,capture_test_app_linux_system,capture_test_prj,pippo}
