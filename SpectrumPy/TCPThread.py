@@ -34,7 +34,7 @@ class TCPThread(QThread):
     def run(self):
         data = b''
         while self.isRunning:
-            # check if 16384 samples (131072 bytes are available)
+            # check if 16384 samples (131072 bytes) are available
             if len(data) < 131072:
                 try:
                     chunk = self.socket.recv(131072 - len(data))
@@ -75,12 +75,12 @@ class TCPThread(QThread):
         for i in range(0,self.CHUNK):
             # samples are on 12 bits signed (from b31 to b19)
             # b18=0 b17=0 b16=OTR b15 ... b0 =0 
-            ii_intb31_b0 = int.from_bytes(iq[i*8  :i*8+4],"little",signed=False) 
-            ii_int[i] =  ii_intb31_b0-2**31 #& 0xFFFFFFFF
-            ii_OTR = (ii_intb31_b0 & 0x00010000) >> 16
+            #ii_intb31_b0 = int.from_bytes(iq[i*8  :i*8+4],"little",signed=True) 
+            ii_OTR    = (iq[i*8+2] & 0x01) 
+            ii_int[i] = int.from_bytes( [0,0,iq[i*8+2] & 0xF0,iq[i*8+3]],"little",signed=True)
             if(ii_OTR == 1):
                 countOTR = countOTR+1        
-            qq_intb31_b0 = int.from_bytes(iq[i*8+4:i*8+8],"little",signed=False)
+            qq_intb31_b0 = int.from_bytes(iq[i*8+4:i*8+8],"little",signed=True)
             qq_int[i] =  qq_intb31_b0 #& 0xFFFFFFFF
             qq_OTR = (qq_intb31_b0 & 0x00010000) >> 16
 
@@ -89,11 +89,14 @@ class TCPThread(QThread):
 
         iq_int_np = np.array(ii_int) + 1j*np.array(qq_int)
         
-        power, _ = mlab.psd(iq_int_np, NFFT=self.CHUNK, window=self.PSDwindow, Fs=64e6, scale_by_freq=False)
-        power = power[len(power)>>1:] # get only the right spectrum (Freq >= 0)
-        
-        self.signalRx.emit(np.sqrt(power))
-        print(str(len(iq)) + " bytes at " + str(millis()) + " milliseconds" )
+        #power, _ = mlab.psd(iq_int_np, NFFT=self.CHUNK, window=self.PSDwindow, Fs=64e6, scale_by_freq=False)
+        #power = power[len(power)>>1:] # get only the right spectrum (Freq >= 0)
+        power, _ = mlab.psd(ii_int, NFFT=4096, window=self.PSDwindow, Fs=64e6, scale_by_freq=False)
+        #power_sqrt = np.sqrt(power)
+        totpower = sum(power) / 2**64
+        power = power[0:-1] / (2**64)
+        self.signalRx.emit(power)
+        print(str(len(iq)) + " bytes. Total power=" + str(totpower) + "  NumBins=" + str(len(power)) + " imin=" + hex(min(ii_int)) + " imax=" + hex(max(ii_int)) +  " countOTR=" + str(countOTR) )
 
 
     def Connect(self, address='192.168.1.1', port= 1001):

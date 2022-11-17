@@ -1,7 +1,7 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
--- Date        : Tue Nov  1 19:16:17 2022
+-- Date        : Sat Nov  5 19:52:50 2022
 -- Host        : DESKTOP-SQGSJV7 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               d:/EBAZ4205_SDR/Zynq/capture-test/capture-test.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0_sim_netlist.vhdl
@@ -411,16 +411,16 @@ begin
       Q => \^gpio_io_o\(19),
       R => bus2ip_reset
     );
-\Dual.gpio_Data_Out_reg[13]\: unisim.vcomponents.FDSE
+\Dual.gpio_Data_Out_reg[13]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => s_axi_aclk,
       CE => E(0),
       D => D(18),
       Q => \^gpio_io_o\(18),
-      S => bus2ip_reset
+      R => bus2ip_reset
     );
 \Dual.gpio_Data_Out_reg[14]\: unisim.vcomponents.FDRE
     generic map(
@@ -455,38 +455,38 @@ begin
       Q => \^gpio_io_o\(15),
       R => bus2ip_reset
     );
-\Dual.gpio_Data_Out_reg[17]\: unisim.vcomponents.FDSE
+\Dual.gpio_Data_Out_reg[17]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => s_axi_aclk,
       CE => E(0),
       D => D(14),
       Q => \^gpio_io_o\(14),
-      S => bus2ip_reset
+      R => bus2ip_reset
     );
-\Dual.gpio_Data_Out_reg[18]\: unisim.vcomponents.FDSE
+\Dual.gpio_Data_Out_reg[18]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => s_axi_aclk,
       CE => E(0),
       D => D(13),
       Q => \^gpio_io_o\(13),
-      S => bus2ip_reset
+      R => bus2ip_reset
     );
-\Dual.gpio_Data_Out_reg[19]\: unisim.vcomponents.FDSE
+\Dual.gpio_Data_Out_reg[19]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => s_axi_aclk,
       CE => E(0),
       D => D(12),
       Q => \^gpio_io_o\(12),
-      S => bus2ip_reset
+      R => bus2ip_reset
     );
 \Dual.gpio_Data_Out_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -499,16 +499,16 @@ begin
       Q => \^gpio_io_o\(30),
       R => bus2ip_reset
     );
-\Dual.gpio_Data_Out_reg[20]\: unisim.vcomponents.FDSE
+\Dual.gpio_Data_Out_reg[20]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => s_axi_aclk,
       CE => E(0),
       D => D(11),
       Q => \^gpio_io_o\(11),
-      S => bus2ip_reset
+      R => bus2ip_reset
     );
 \Dual.gpio_Data_Out_reg[21]\: unisim.vcomponents.FDRE
     generic map(
@@ -521,16 +521,16 @@ begin
       Q => \^gpio_io_o\(10),
       R => bus2ip_reset
     );
-\Dual.gpio_Data_Out_reg[22]\: unisim.vcomponents.FDSE
+\Dual.gpio_Data_Out_reg[22]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => s_axi_aclk,
       CE => E(0),
       D => D(9),
       Q => \^gpio_io_o\(9),
-      S => bus2ip_reset
+      R => bus2ip_reset
     );
 \Dual.gpio_Data_Out_reg[23]\: unisim.vcomponents.FDRE
     generic map(
@@ -543,38 +543,38 @@ begin
       Q => \^gpio_io_o\(8),
       R => bus2ip_reset
     );
-\Dual.gpio_Data_Out_reg[24]\: unisim.vcomponents.FDSE
+\Dual.gpio_Data_Out_reg[24]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => s_axi_aclk,
       CE => E(0),
       D => D(7),
       Q => \^gpio_io_o\(7),
-      S => bus2ip_reset
+      R => bus2ip_reset
     );
-\Dual.gpio_Data_Out_reg[25]\: unisim.vcomponents.FDSE
+\Dual.gpio_Data_Out_reg[25]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => s_axi_aclk,
       CE => E(0),
       D => D(6),
       Q => \^gpio_io_o\(6),
-      S => bus2ip_reset
+      R => bus2ip_reset
     );
-\Dual.gpio_Data_Out_reg[26]\: unisim.vcomponents.FDSE
+\Dual.gpio_Data_Out_reg[26]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => s_axi_aclk,
       CE => E(0),
       D => D(5),
       Q => \^gpio_io_o\(5),
-      S => bus2ip_reset
+      R => bus2ip_reset
     );
 \Dual.gpio_Data_Out_reg[27]\: unisim.vcomponents.FDRE
     generic map(
@@ -631,16 +631,16 @@ begin
       Q => \^gpio_io_o\(1),
       R => bus2ip_reset
     );
-\Dual.gpio_Data_Out_reg[31]\: unisim.vcomponents.FDSE
+\Dual.gpio_Data_Out_reg[31]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => s_axi_aclk,
       CE => E(0),
       D => D(0),
       Q => \^gpio_io_o\(0),
-      S => bus2ip_reset
+      R => bus2ip_reset
     );
 \Dual.gpio_Data_Out_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -3050,7 +3050,7 @@ entity ebaz4205_axi_gpio_1_0_axi_gpio is
   attribute C_ALL_OUTPUTS_2 : integer;
   attribute C_ALL_OUTPUTS_2 of ebaz4205_axi_gpio_1_0_axi_gpio : entity is 1;
   attribute C_DOUT_DEFAULT : integer;
-  attribute C_DOUT_DEFAULT of ebaz4205_axi_gpio_1_0_axi_gpio : entity is 1342177;
+  attribute C_DOUT_DEFAULT of ebaz4205_axi_gpio_1_0_axi_gpio : entity is 1048576;
   attribute C_DOUT_DEFAULT_2 : integer;
   attribute C_DOUT_DEFAULT_2 of ebaz4205_axi_gpio_1_0_axi_gpio : entity is 0;
   attribute C_FAMILY : string;
@@ -3780,7 +3780,7 @@ architecture STRUCTURE of ebaz4205_axi_gpio_1_0 is
   attribute C_ALL_OUTPUTS_2 : integer;
   attribute C_ALL_OUTPUTS_2 of U0 : label is 1;
   attribute C_DOUT_DEFAULT : integer;
-  attribute C_DOUT_DEFAULT of U0 : label is 1342177;
+  attribute C_DOUT_DEFAULT of U0 : label is 1048576;
   attribute C_DOUT_DEFAULT_2 : integer;
   attribute C_DOUT_DEFAULT_2 of U0 : label is 0;
   attribute C_FAMILY : string;
@@ -3807,7 +3807,7 @@ architecture STRUCTURE of ebaz4205_axi_gpio_1_0 is
   attribute x_interface_info : string;
   attribute x_interface_info of s_axi_aclk : signal is "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN ebaz4205_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN ebaz4205_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_aresetn : signal is "xilinx.com:signal:reset:1.0 S_AXI_ARESETN RST";
   attribute x_interface_parameter of s_axi_aresetn : signal is "XIL_INTERFACENAME S_AXI_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of s_axi_arready : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARREADY";
@@ -3826,7 +3826,7 @@ architecture STRUCTURE of ebaz4205_axi_gpio_1_0 is
   attribute x_interface_parameter of gpio_io_o : signal is "XIL_INTERFACENAME GPIO, BOARD.ASSOCIATED_PARAM GPIO_BOARD_INTERFACE";
   attribute x_interface_info of s_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARADDR";
   attribute x_interface_info of s_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWADDR";
-  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 1e+08, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN ebaz4205_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN ebaz4205_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 S_AXI BRESP";
   attribute x_interface_info of s_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 S_AXI RDATA";
   attribute x_interface_info of s_axi_rresp : signal is "xilinx.com:interface:aximm:1.0 S_AXI RRESP";

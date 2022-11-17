@@ -35,3 +35,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/EBAZ4205_SDR/Zynq/capture-test/c
 INFO: [VRFC 10-311] analyzing module ebaz4205_auto_pc_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.gen/sources_1/bd/ebaz4205/hdl/ebaz4205_wrapper.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ebaz4205_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/sim/ebaz4205_proc_sys_reset_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ebaz4205_proc_sys_reset_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/EBAZ4205_SDR/Zynq/capture-test/capture-test.ip_user_files/bd/ebaz4205/ip/ebaz4205_dds_compiler_0_0/sim/ebaz4205_dds_compiler_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ebaz4205_dds_compiler_0_0'

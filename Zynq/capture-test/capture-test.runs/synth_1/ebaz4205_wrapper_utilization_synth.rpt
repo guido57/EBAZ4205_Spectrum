@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Sat Nov  5 19:53:48 2022
+| Date         : Fri Nov 11 21:26:26 2022
 | Host         : DESKTOP-SQGSJV7 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ebaz4205_wrapper_utilization_synth.rpt -pb ebaz4205_wrapper_utilization_synth.pb
 | Design       : ebaz4205_wrapper

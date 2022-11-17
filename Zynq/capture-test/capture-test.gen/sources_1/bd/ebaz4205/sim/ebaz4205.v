@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-//Date        : Fri Nov  4 22:11:18 2022
+//Date        : Fri Nov 11 21:25:08 2022
 //Host        : DESKTOP-SQGSJV7 running 64-bit major release  (build 9200)
 //Command     : generate_target ebaz4205.bd
 //Design      : ebaz4205
@@ -885,7 +885,7 @@ select_input:
 0 : RF_test
 1 : ADC
  */
-(* CORE_GENERATION_INFO = "ebaz4205,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=ebaz4205,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=26,numReposBlks=19,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,\"\"\"\"\"\"\"\"\"\"\"da_axi4_cnt\"\"\"\"\"\"\"\"\"\"\"=1,\"\"\"\"\"\"\"\"\"\"\"da_board_cnt\"\"\"\"\"\"\"\"\"\"\"=1,\"\"\"\"\"\"\"\"\"\"\"da_clkrst_cnt\"\"\"\"\"\"\"\"\"\"\"=2,\"\"\"\"\"\"da_axi4_cnt\"\"\"\"\"\"=1,\"\"\"da_clkrst_cnt\"\"\"=1,\"da_axi4_cnt\"=3,\"da_board_cnt\"=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "ebaz4205.hwdef" *) 
+(* CORE_GENERATION_INFO = "ebaz4205,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=ebaz4205,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=29,numReposBlks=22,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,\"\"\"\"\"\"\"\"\"\"\"\"\"da_axi4_cnt\"\"\"\"\"\"\"\"\"\"\"\"\"=1,\"\"\"\"\"\"\"\"\"\"\"\"\"da_board_cnt\"\"\"\"\"\"\"\"\"\"\"\"\"=1,\"\"\"\"\"\"\"\"\"\"\"\"\"da_clkrst_cnt\"\"\"\"\"\"\"\"\"\"\"\"\"=2,\"\"\"\"\"\"\"\"da_axi4_cnt\"\"\"\"\"\"\"\"=1,\"\"\"\"\"da_clkrst_cnt\"\"\"\"\"=1,\"\"\"da_axi4_cnt\"\"\"=3,\"\"\"da_board_cnt\"\"\"=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "ebaz4205.hwdef" *) 
 module ebaz4205
    (ADC_clk_64M,
     ADC_in,
@@ -1023,8 +1023,8 @@ module ebaz4205
   wire PS_M03_AXI_WREADY;
   wire [3:0]PS_M03_AXI_WSTRB;
   wire PS_M03_AXI_WVALID;
-  wire [15:0]RF_test_1MHz_M_AXIS_DATA_TDATA;
-  wire RF_test_1MHz_M_AXIS_DATA_TVALID;
+  wire [15:0]RF_test_1MHz_m_axis_data_tdata;
+  wire RF_test_1MHz_m_axis_data_tvalid;
   wire [0:0]axi_gpio_0_gpio_io_o;
   wire [31:0]axi_gpio_1_gpio_io_o;
   wire [0:0]axi_gpio_dds_gpio2_io_o;
@@ -1059,10 +1059,13 @@ module ebaz4205
   wire [1:0]xlconcat_0_dout;
   wire [31:0]xlconcat_1_dout;
   wire [15:0]xlconcat_2_dout;
+  wire [15:0]xlconcat_3_dout;
   wire [15:0]xlconstant_0_dout;
   wire [0:0]xlconstant_1_dout;
   wire [2:0]xlconstant_2_dout;
+  wire [3:0]xlconstant_3_dout;
   wire [3:0]xlslice_0_Dout;
+  wire [11:0]xlslice_0_Dout1;
 
   assign ADC_clk_64M = PS_FCLK_CLK1;
   assign ADC_in_1 = ADC_in[11:0];
@@ -1205,8 +1208,8 @@ module ebaz4205
         .enet0_gmii_txd(xlslice_0_Dout));
   ebaz4205_dds_compiler_0_0 RF_test_1MHz
        (.aclk(PS_FCLK_CLK1),
-        .m_axis_data_tdata(RF_test_1MHz_M_AXIS_DATA_TDATA),
-        .m_axis_data_tvalid(RF_test_1MHz_M_AXIS_DATA_TVALID),
+        .m_axis_data_tdata(RF_test_1MHz_m_axis_data_tdata),
+        .m_axis_data_tvalid(RF_test_1MHz_m_axis_data_tvalid),
         .s_axis_config_tdata(axi_gpio_1_gpio_io_o),
         .s_axis_config_tvalid(xlconstant_1_dout));
   ebaz4205_axi_gpio_0_0 axi_gpio_0
@@ -1280,8 +1283,8 @@ module ebaz4205
         .ctrl_s_axi_wvalid(PS_M00_AXI_WVALID));
   ebaz4205_axis_mux_0_0 axis_mux_0
        (.clk(PS_FCLK_CLK1),
-        .input0_axis_tdata(RF_test_1MHz_M_AXIS_DATA_TDATA),
-        .input0_axis_tvalid(RF_test_1MHz_M_AXIS_DATA_TVALID),
+        .input0_axis_tdata(xlconcat_3_dout),
+        .input0_axis_tvalid(RF_test_1MHz_m_axis_data_tvalid),
         .input1_axis_tdata(xlconcat_2_dout),
         .input1_axis_tvalid(xlconstant_1_dout),
         .output_axis_tdata(axis_mux_0_output_axis_tdata),
@@ -1306,12 +1309,21 @@ module ebaz4205
         .In1(xlconstant_2_dout),
         .In2(ADC_in_1),
         .dout(xlconcat_2_dout));
+  ebaz4205_xlconcat_3_0 xlconcat_3
+       (.In0(xlconstant_3_dout),
+        .In1(xlslice_0_Dout1),
+        .dout(xlconcat_3_dout));
   ebaz4205_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
   ebaz4205_xlconstant_1_0 xlconstant_1
        (.dout(xlconstant_1_dout));
   ebaz4205_xlconstant_2_0 xlconstant_2
        (.dout(xlconstant_2_dout));
+  ebaz4205_xlconstant_3_0 xlconstant_3
+       (.dout(xlconstant_3_dout));
+  ebaz4205_xlslice_0_1 xlslice_0
+       (.Din(RF_test_1MHz_m_axis_data_tdata),
+        .Dout(xlslice_0_Dout1));
 endmodule
 
 module ebaz4205_axi_interconnect_0_0

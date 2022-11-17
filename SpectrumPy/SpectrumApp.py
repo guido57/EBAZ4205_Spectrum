@@ -86,9 +86,9 @@ class MainWindow(QtWidgets.QMainWindow):
         self.spectrumView.setLabel("bottom", "Frequency", units="Hz")
         # ... set dB as y axis
         self.spectrumView.setLabel("left", "Power", units="dBm")
-        self.spectrumView.setLimits(yMin=3,yMax=10)
+        self.spectrumView.setLimits(yMin=-10,yMax=0)
         self.spectrumView.setYRange(-10,10,padding=None,update=False)
-        dy = [(value/2, str(20*value-240)) for value in list(range(60,-10,-1))]
+        dy = [(value, str(10*value)) for value in list(range(0,-13,-1))]
         ay = self.spectrumView.getAxis('left')  
         ay.setTicks([dy, []])
         # ... get rid of the m(milli) M(mega) ... modifiers before Units. e.g. mdB
@@ -215,6 +215,7 @@ class MainWindow(QtWidgets.QMainWindow):
         #self.FFToversampling = 8 # from 8192 to 1024
         #self.FFToversampling = int(len(data_os)/self.FREQBINS) # from 8192 to 1024
         #data_os[:] = data_os[:] / 1000000000
+        '''
         data = np.zeros(self.FREQBINS)
         k = 0
         for i in range(0, 8192, int(4/self.FFToversampling)) :
@@ -226,6 +227,8 @@ class MainWindow(QtWidgets.QMainWindow):
                 k = 0        
         
         #data[:] =data[0:8192:int(8/self.FFToversampling)]
+        '''
+        data = data_os[:]
         self.data = data*(1.0-self.doubleSpinBoxAlfa.value())+self.data*(self.doubleSpinBoxAlfa.value())
         """
         if(self.counter%1==0):
@@ -240,7 +243,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def render(self):
         try:
             #self.counter += 1
-            self.curve.setData(self.freq,self.data,autoLevels=True, autoRange=False)
+            self.curve.setData(self.freq,self.data.astype(float),autoLevels=True, autoRange=False)
             if self.isPeaks:
                 idx, _ = find_peaks(self.data,distance=50)
                 self.curvePeaks.setData(self.freq[idx],self.data[idx])

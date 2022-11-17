@@ -39,7 +39,10 @@
       "xlconcat_2": "",
       "xlconstant_2": "",
       "rst_ENET0_GMII_RX_CLK_0_100M": "",
-      "axis_capture_RF": ""
+      "axis_capture_RF": "",
+      "xlslice_0": "",
+      "xlconcat_3": "",
+      "xlconstant_3": ""
     },
     "interface_ports": {
       "DDR": {
@@ -2099,7 +2102,7 @@
             "value": "false"
           },
           "Latency": {
-            "value": "6"
+            "value": "7"
           },
           "M_DATA_Has_TUSER": {
             "value": "Not_Required"
@@ -2108,7 +2111,7 @@
             "value": "Auto"
           },
           "OUTPUT_FORM": {
-            "value": "Sign_and_Magnitude"
+            "value": "Twos_Complement"
           },
           "Output_Frequency1": {
             "value": "1"
@@ -2117,7 +2120,7 @@
             "value": "Sine"
           },
           "Output_Width": {
-            "value": "16"
+            "value": "12"
           },
           "PINC1": {
             "value": "100000000000000000000"
@@ -2138,7 +2141,7 @@
             "value": "Not_Required"
           },
           "Spurious_Free_Dynamic_Range": {
-            "value": "95"
+            "value": "70"
           }
         }
       },
@@ -2248,16 +2251,12 @@
                 "value_src": "constant"
               },
               "FREQ_HZ": {
-                "value": "64000000",
+                "value": "6.4e+07",
                 "value_src": "user_prop"
               },
               "CLK_DOMAIN": {
                 "value": "ebaz4205_processing_system7_0_0_FCLK_CLK1",
                 "value_src": "default_prop"
-              },
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chan} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency chan_stride format long minimum {} maximum {}} value 16} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_cosine {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cosine} enabled {attribs {resolve_type generated dependency cosine_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency cosine_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency cosine_fractwidth format long minimum {} maximum {}} value 15} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}} field_sine {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value sine} enabled {attribs {resolve_type generated dependency sine_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency sine_width format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type generated dependency sine_offset format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency sine_fractwidth format long minimum {} maximum {}} value 15} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}}}}} TDATA_WIDTH 16 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_chanid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chanid} enabled {attribs {resolve_type generated dependency chanid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency chanid_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_user {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value user} enabled {attribs {resolve_type generated dependency user_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency user_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency user_offset format long minimum {} maximum {}} value 0}}}}}} TUSER_WIDTH 0}",
-                "value_src": "ip_prop"
               }
             },
             "port_maps": {
@@ -2311,7 +2310,7 @@
                 "value_src": "constant"
               },
               "FREQ_HZ": {
-                "value": "64000000",
+                "value": "6.4e+07",
                 "value_src": "user_prop"
               },
               "CLK_DOMAIN": {
@@ -2370,7 +2369,7 @@
                 "value_src": "constant"
               },
               "FREQ_HZ": {
-                "value": "64000000",
+                "value": "6.4e+07",
                 "value_src": "user_prop"
               },
               "CLK_DOMAIN": {
@@ -2405,7 +2404,7 @@
                 "value_src": "constant"
               },
               "FREQ_HZ": {
-                "value": "64000000",
+                "value": "6.4e+07",
                 "value_src": "user_prop"
               },
               "CLK_DOMAIN": {
@@ -2466,6 +2465,51 @@
             "value": "14"
           }
         }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "ebaz4205_xlslice_0_1",
+        "xci_path": "ip\\ebaz4205_xlslice_0_1\\ebaz4205_xlslice_0_1.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "11"
+          },
+          "DIN_WIDTH": {
+            "value": "16"
+          },
+          "DOUT_WIDTH": {
+            "value": "12"
+          }
+        }
+      },
+      "xlconcat_3": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "ebaz4205_xlconcat_3_0",
+        "xci_path": "ip\\ebaz4205_xlconcat_3_0\\ebaz4205_xlconcat_3_0.xci",
+        "inst_hier_path": "xlconcat_3",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "4"
+          },
+          "IN1_WIDTH": {
+            "value": "12"
+          }
+        }
+      },
+      "xlconstant_3": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "ebaz4205_xlconstant_3_0",
+        "xci_path": "ip\\ebaz4205_xlconstant_3_0\\ebaz4205_xlconstant_3_0.xci",
+        "inst_hier_path": "xlconstant_3",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "4"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2485,12 +2529,6 @@
         "interface_ports": [
           "axi_gpio_dds/S_AXI",
           "PS/M03_AXI"
-        ]
-      },
-      "RF_test_1MHz_M_AXIS_DATA": {
-        "interface_ports": [
-          "RF_test_1MHz/M_AXIS_DATA",
-          "axis_mux_0/input0_axis"
         ]
       },
       "processing_system7_0_DDR": {
@@ -2580,6 +2618,18 @@
           "FCLK_CLK3_0"
         ]
       },
+      "RF_test_1MHz_m_axis_data_tdata": {
+        "ports": [
+          "RF_test_1MHz/m_axis_data_tdata",
+          "xlslice_0/Din"
+        ]
+      },
+      "RF_test_1MHz_m_axis_data_tvalid": {
+        "ports": [
+          "RF_test_1MHz/m_axis_data_tvalid",
+          "axis_mux_0/input0_axis_tvalid"
+        ]
+      },
       "axi_gpio_0_gpio_io_o": {
         "ports": [
           "axi_gpio_0/gpio_io_o",
@@ -2634,6 +2684,12 @@
           "axis_mux_0/input1_axis_tdata"
         ]
       },
+      "xlconcat_3_dout": {
+        "ports": [
+          "xlconcat_3/dout",
+          "axis_mux_0/input0_axis_tdata"
+        ]
+      },
       "xlconstant_0_dout": {
         "ports": [
           "xlconstant_0/dout",
@@ -2653,10 +2709,22 @@
           "xlconcat_2/In1"
         ]
       },
+      "xlconstant_3_dout": {
+        "ports": [
+          "xlconstant_3/dout",
+          "xlconcat_3/In0"
+        ]
+      },
       "xlslice_0_Dout": {
         "ports": [
           "PS/enet0_gmii_txd",
           "enet0_gmii_txd"
+        ]
+      },
+      "xlslice_0_Dout1": {
+        "ports": [
+          "xlslice_0/Dout",
+          "xlconcat_3/In1"
         ]
       }
     },

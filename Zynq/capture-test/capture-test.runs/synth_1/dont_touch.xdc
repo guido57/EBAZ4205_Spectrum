@@ -66,4 +66,13 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_ax
 # IP: bd/ebaz4205/ip/ebaz4205_auto_pc_0/ebaz4205_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_auto_pc_0 || ORIG_REF_NAME==ebaz4205_auto_pc_0} -quiet] -quiet
 
+# IP: bd/ebaz4205/ip/ebaz4205_xlslice_0_1/ebaz4205_xlslice_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlslice_0_1 || ORIG_REF_NAME==ebaz4205_xlslice_0_1} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_xlconcat_3_0/ebaz4205_xlconcat_3_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlconcat_3_0 || ORIG_REF_NAME==ebaz4205_xlconcat_3_0} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_xlconstant_3_0/ebaz4205_xlconstant_3_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlconstant_3_0 || ORIG_REF_NAME==ebaz4205_xlconstant_3_0} -quiet] -quiet
+
 # XDC: d:/EBAZ4205_SDR/Zynq/capture-test/capture-test.gen/sources_1/bd/ebaz4205/ebaz4205_ooc.xdc

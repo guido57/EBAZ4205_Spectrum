@@ -7660,3 +7660,81 @@ java.net.NoRouteToHostException: No route to host: Datagram send failed
 	at org.eclipse.tcf.protocol.Protocol$3.run(Protocol.java:243)
 	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
 	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-11-10 22:29:54.496
+!MESSAGE TCF channel terminated
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)
+!SESSION 2022-11-11 08:18:10.212 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2022-11-11 08:18:27.865
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-11 08:18:31.433
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-11 08:18:31.443
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-11 08:18:31.443
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:33.105
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:33.105
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:33.120
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:33.121
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:35.667
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:35.667
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:35.672
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:35.672
+!MESSAGE XSCT Command: [setws D:/EBAZ4205_SDR/Vitis/ws_capture_test], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:35.672
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, d:/Xilinx/Vitis/2021.2/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:35.673
+!MESSAGE XSCT command with result: [setws D:/EBAZ4205_SDR/Vitis/ws_capture_test], Result: [null, ]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:38.100
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Thread: Worker-3: Launching Debugger_TCP_server-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:39.760
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Result: [null, ]. Thread: Worker-3: Launching Debugger_TCP_server-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:39.760
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Thread: Worker-3: Launching Debugger_TCP_server-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-11 08:18:39.760
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Result: [null, {"device": "7z010",
+"family": "zynq",
+"timestamp": "Wed Oct  5 21:01:41 2022",
+"vivado_version": "2021.2",
+"part": "xc7z010clg400-1",
+}]. Thread: Worker-3: Launching Debugger_TCP_server-Default
