@@ -155,8 +155,8 @@ int main(int argc , char *argv[])
 
     char buffer[1025];  //data buffer of 1K
 
-    // Create the DDS object with a clock frequency=64000 KHz (64MHz) and 27 bit step phase width
-    dds = new DDS(0x41210000, size_in_k, 64000.0, 27);
+    // Create the DDS object with a clock frequency=64000 KHz (64MHz) and 26 bit step phase width
+    dds = new DDS(0x41210000, size_in_k, 64000.0, 26);
 
     // Create the MUX object to select ADC input or RF generator
     mux = new MUX(0x41210000, size_in_k);

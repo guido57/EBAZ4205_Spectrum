@@ -1,5 +1,5 @@
-2022-11-04T20:21:57.275660100255-20:21:57 **** Incremental Build of project capture_test_prj ****
-000-buildplatform.bat 50019 capture_test_prj zynq_fsbl 
+2022-12-08T11:46:31.190659500255-11:46:31 **** Build of project capture_test_prj ****
+000-buildplatform.bat 50273 capture_test_prj  
 000-XSDB Server Channel: tcfchan#1
 000-Reading the platform  : "capture_test_prj"
 000-Building the zynq_fsbl application.
@@ -400,5 +400,5 @@
 000-/ps7_cortexa9_0/lib -L./ -Tlscript.ld
 000-
 00255-
-20:22:04 Build Finished (took 6s.944ms)
+11:46:41 Build Finished (took 10s.223ms)
 

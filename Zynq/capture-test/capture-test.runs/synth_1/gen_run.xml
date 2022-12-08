@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1668198312" LaunchIncrCheckpoint="$PPRDIR/../../../Vivado_projects/ebaz4205/ebaz4205.srcs/utils_1/imports/synth_1/ebaz4205_wrapper.dcp">
   <File Type="PA-TCL" Name="ebaz4205_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="ebaz4205_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ebaz4205_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="ebaz4205_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="ebaz4205_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ebaz4205_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="ebaz4205_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ebaz4205_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="ebaz4205_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/axis_mux_v_1_0.vhd">

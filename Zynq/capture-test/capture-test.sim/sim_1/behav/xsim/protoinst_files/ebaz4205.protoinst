@@ -782,14 +782,6 @@
 						"WVALID": { "actual": "s_axi_wvalid[0:0]"}
 					}
 				},
-				"/RF_test_1MHz/M_AXIS_DATA": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "aclk"},
-						"TDATA": { "actual": "m_axis_data_tdata"},
-						"TVALID": { "actual": "m_axis_data_tvalid"}
-					}
-				},
 				"/axi_gpio_0/S_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
@@ -862,14 +854,6 @@
 						"WREADY": { "actual": "ctrl_s_axi_wready"},
 						"WSTRB": { "actual": "ctrl_s_axi_wstrb"},
 						"WVALID": { "actual": "ctrl_s_axi_wvalid"}
-					}
-				},
-				"/axis_mux_0/input0_axis": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "clk"},
-						"TDATA": { "actual": "input0_axis_tdata"},
-						"TVALID": { "actual": "input0_axis_tvalid"}
 					}
 				}
 			}

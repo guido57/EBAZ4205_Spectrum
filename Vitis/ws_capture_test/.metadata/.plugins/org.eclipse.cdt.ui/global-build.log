@@ -1,5 +1,5 @@
-20:21:57 **** Incremental Build of project capture_test_prj ****
-buildplatform.bat 50019 capture_test_prj zynq_fsbl 
+11:46:31 **** Build of project capture_test_prj ****
+buildplatform.bat 50273 capture_test_prj  
 XSDB Server Channel: tcfchan#1
 Reading the platform  : "capture_test_prj"
 Building the zynq_fsbl application.
@@ -399,6 +399,21 @@ o sd.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=corte
 group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                     -Wl,--gc-sections -Lzynq_fsbl_bsp
 /ps7_cortexa9_0/lib -L./ -Tlscript.ld
 
-20:22:04 **** Build of configuration Debug for project TCP_server ****
+11:46:41 **** Build of configuration Debug for project TCP_server ****
 make all 
-make: Nothing to be done for 'all'.
+'Building file: ../src/main.cpp'
+'Invoking: ARM v7 Linux g++ compiler'
+arm-linux-gnueabihf-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: TCP_server.elf'
+'Invoking: ARM v7 Linux g++ linker'
+arm-linux-gnueabihf-g++  -o "TCP_server.elf"  ./src/DDS.o ./src/IP_Driver.o ./src/MUX.o ./src/data_capture.o ./src/main.o   
+'Finished building target: TCP_server.elf'
+' '
+'Invoking: ARM v7 Linux Print Size'
+arm-linux-gnueabihf-size TCP_server.elf  |tee "TCP_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13069	    536	     40	  13645	   354d	TCP_server.elf
+'Finished building: TCP_server.elf.size'
+' '

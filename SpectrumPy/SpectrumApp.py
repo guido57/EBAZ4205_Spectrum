@@ -30,7 +30,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.center_freq = 0          # Hz
         self.gen_freq = 1000000       # Hz
         self.band_width = 32e6        # Hz
-        self.FREQBINS = 1024          # num frequency bins viewed  
+        self.FREQBINS = 8192          # num frequency bins viewed  
         self.FFToversampling = 8      # number of frequency bins averaged to get FREQBINS
         self.doublesided = False      # if IQ are both present -> doublesided = True
                                       # if I exists but Q=0    -> doublesided = False
@@ -147,7 +147,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def reset_plots(self):
         self.PPM = self.spinBoxPPM.value()
         self.gain = float(self.comboBoxGain.currentText())
-        self.FREQBINS = 2048
+        self.FREQBINS =8192
         self.FFToversampling = int(4*self.FREQBINS/int(self.comboBoxNFFT.currentText()))
         self.freq = self.calc_freq(self.band_width, self.FREQBINS ,self.center_freq)
         self.data = np.random.rand(self.FREQBINS)*0.000001

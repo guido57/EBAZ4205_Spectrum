@@ -7738,3 +7738,68 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "vivado_version": "2021.2",
 "part": "xc7z010clg400-1",
 }]. Thread: Worker-3: Launching Debugger_TCP_server-Default
+!SESSION 2022-12-07 21:01:01.446 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2022-12-07 21:01:19.797
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-07 21:01:23.920
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-07 21:01:23.921
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-07 21:01:23.922
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:01:25.246
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:01:25.246
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:01:25.263
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:01:25.263
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:01:25.264
+!MESSAGE XSCT Command: [setws D:/EBAZ4205_SDR/Vitis/ws_capture_test], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:01:25.265
+!MESSAGE XSCT command with result: [setws D:/EBAZ4205_SDR/Vitis/ws_capture_test], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:01:25.329
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:01:28.001
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:01:28.002
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:01:28.003
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/Xilinx/Vitis/2021.2/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:02:31.794
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Thread: Worker-2: Launching Debugger_TCP_server-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:02:33.579
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Result: [null, ]. Thread: Worker-2: Launching Debugger_TCP_server-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:02:33.581
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Thread: Worker-2: Launching Debugger_TCP_server-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-07 21:02:33.583
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/hw/ebaz4205_wrapper.xsa], Result: [null, {"device": "7z010",
+"family": "zynq",
+"timestamp": "Wed Oct  5 21:01:41 2022",
+"vivado_version": "2021.2",
+"part": "xc7z010clg400-1",
+}]. Thread: Worker-2: Launching Debugger_TCP_server-Default

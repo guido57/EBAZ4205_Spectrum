@@ -3,6 +3,7 @@ from matplotlib import mlab as mlab
 import numpy as np
 import time
 import socket
+import debugpy
 
 class TCPThread(QThread):
     signalRx = pyqtSignal(object)
@@ -32,6 +33,7 @@ class TCPThread(QThread):
             self.wait()
 
     def run(self):
+        debugpy.debug_this_thread()
         data = b''
         while self.isRunning:
             # check if 16384 samples (131072 bytes) are available
@@ -91,7 +93,7 @@ class TCPThread(QThread):
         
         #power, _ = mlab.psd(iq_int_np, NFFT=self.CHUNK, window=self.PSDwindow, Fs=64e6, scale_by_freq=False)
         #power = power[len(power)>>1:] # get only the right spectrum (Freq >= 0)
-        power, _ = mlab.psd(ii_int, NFFT=4096, window=self.PSDwindow, Fs=64e6, scale_by_freq=False)
+        power, _ = mlab.psd(ii_int, NFFT=16384, window=self.PSDwindow, Fs=64e6, scale_by_freq=False)
         #power_sqrt = np.sqrt(power)
         totpower = sum(power) / 2**64
         power = power[0:-1] / (2**64)
