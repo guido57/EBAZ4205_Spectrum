@@ -62,6 +62,12 @@ It lets you to send commands to EBA4205 also to:
   * change the local RF test generator frequency in the range 100 KHz - 30 MHz
   * change the waterfall colors
   
+  Please note that the following UI controlos don't work yet (they'll work in EBAZ4205_SDR!):
+  * Gain (dB)
+  * NFFT 
+  * Freq Correction
+  * Center Frequency (Hz)
+  
   ![](https://github.com/guido57/EBAZ4205_SDR/blob/main/docs/SpectrumPy.png)
 
 
