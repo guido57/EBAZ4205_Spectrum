@@ -1,4 +1,4 @@
-# EBAZ4205_SDR
+# EBAZ4205_Spectrum
 
 ## Description
 
