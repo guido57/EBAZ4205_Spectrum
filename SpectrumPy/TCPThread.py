@@ -98,7 +98,7 @@ class TCPThread(QThread):
         totpower = sum(power) / 2**64
         power = power[0:-1] / (2**64)
         self.signalRx.emit(power)
-        print(str(len(iq)) + " bytes. Total power=" + str(totpower) + "  NumBins=" + str(len(power)) + " imin=" + hex(min(ii_int)) + " imax=" + hex(max(ii_int)) +  " countOTR=" + str(countOTR) )
+        #print(str(len(iq)) + " bytes. Total power=" + str(totpower) + "  NumBins=" + str(len(power)) + " imin=" + hex(min(ii_int)) + " imax=" + hex(max(ii_int)) +  " countOTR=" + str(countOTR) )
 
 
     def Connect(self, address='192.168.1.1', port= 1001):

@@ -2,6 +2,7 @@
 <systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="capture_test_app_linux_system" platform="D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/capture_test_prj.xpfm" platformUID="xilinx:::0.0(custom)" sysConfig="capture_test_prj" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
   <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.2115976602">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="pippo" domainName="linux_domain" domainPrettyName="linux on ps7_cortexa9" appBuildConfig="Debug"/>
       <applications name="TCP_server" domainName="linux_domain" domainPrettyName="linux on ps7_cortexa9" appBuildConfig="Debug"/>
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
     </configBuildOptions>
@@ -12,6 +13,7 @@
   </configuration>
   <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.458313961">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="pippo" domainName="linux_domain" domainPrettyName="linux on ps7_cortexa9" appBuildConfig="Release"/>
       <applications name="TCP_server" domainName="linux_domain" domainPrettyName="linux on ps7_cortexa9" appBuildConfig="Release"/>
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
     </configBuildOptions>

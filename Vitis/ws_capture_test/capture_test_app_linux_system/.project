@@ -3,7 +3,6 @@
 	<name>capture_test_app_linux_system</name>
 	<comment></comment>
 	<projects>
-		<project>pippo</project>
 		<project>TCP_server</project>
 	</projects>
 	<buildSpec>

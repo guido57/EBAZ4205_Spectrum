@@ -170,3 +170,12 @@
 21:01:28 INFO  : Successfully done query RDI_DATADIR 
 11:46:41 INFO  : Result from executing command 'getProjects': capture_test_prj
 11:46:41 INFO  : Result from executing command 'getPlatforms': capture_test_prj|D:/EBAZ4205_SDR/Vitis/ws_capture_test/capture_test_prj/export/capture_test_prj/capture_test_prj.xpfm
+18:16:59 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\EBAZ4205_Spectrum\Vitis\ws_capture_test\temp_xsdb_launch_script.tcl
+18:17:01 INFO  : XSCT server has started successfully.
+18:17:01 INFO  : plnx-install-location is set to ''
+18:17:01 INFO  : Successfully done setting XSCT server connection channel  
+18:17:01 INFO  : Successfully done setting workspace for the tool. 
+18:17:01 INFO  : Platform repository initialization has completed.
+18:17:02 INFO  : Successfully done query RDI_DATADIR 
+18:17:02 INFO  : Registering command handlers for Vitis TCF services
+18:18:38 ERROR : Could not connect to host '192.168.0.1' specified in the target 'Linux Agent'
