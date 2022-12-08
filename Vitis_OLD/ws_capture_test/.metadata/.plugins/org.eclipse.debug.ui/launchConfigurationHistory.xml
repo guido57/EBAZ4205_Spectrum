@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchHistory>
+    <launchGroup id="com.xilinx.ide.launchGroup.dc.debug">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.system.vppbmrun">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.aie.debug">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="org.eclipse.ui.externaltools.launchGroup">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.embacc.debug">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.emb.debug">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.embocl.run">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="org.eclipse.debug.ui.launchGroup.run">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.system.run">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.dc.run">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.embocl.debug">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.system.debug">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="org.eclipse.debug.ui.launchGroup.profile">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.system.vppbmdebug">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="org.eclipse.debug.ui.launchGroup.profilee">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.embacc.run">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.bm.vpprun">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.bm.vppdebug">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.emb.run">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+    <launchGroup id="com.xilinx.ide.launchGroup.aie.run">
+        <mruHistory/>
+        <favorites/>
+    </launchGroup>
+</launchHistory>
